@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>City Tour</title>
+    <style>
+        
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .cities {
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+      }
+
+      .city-box {
+        width: 200px;
+        height: 120px;
+        background: #007bff;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+
+      #videoModal {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        display: none;
+        z-index: 9999;
+        overflow: hidden;
+      }
+
+      .video-wrapper {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+
+      #youtubeFrame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 177.78vh; /* 16:9 */
+        height: 100vh;
+
+        min-width: 100vw;
+        min-height: 56.25vw;
+
+        transform: translate(-50%, -50%);
+        border: 0;
+      }
+      #closeBtn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 40px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 10000;
+      }
+      #player-controls{
+        display: none !important;
+      }
+      player-middle-controls{
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cities">
+      <div class="city-box" data-video="dQw4w9WgXcQ">New York</div>
+
+      <div class="city-box" data-video="aqz-KE-bpKQ">London</div>
+
+      <div class="city-box" data-video="ScMzIvxBSi4">Dubai</div>
+    </div>
+
+    <!-- Fullscreen Video Modal -->
+    <div id="videoModal">
+      <button id="closeBtn">&times;</button>
+
+      <div class="video-wrapper">
+        <iframe
+          id="youtubeFrame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <script>
+      const cityBoxes = document.querySelectorAll(".city-box");
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("youtubeFrame");
+      const closeBtn = document.getElementById("closeBtn");
+
+      cityBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          const videoId = box.dataset.video;
+
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1`;
+          modal.style.display = "block";
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        iframe.src = "";
+        modal.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

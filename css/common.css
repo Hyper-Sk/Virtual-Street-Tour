@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: "Google Sans Flex", sans-serif;
     color: #161616;
+    transition: 0.3s;
 }
 
 
@@ -37,11 +38,13 @@ h5{
 a{
     text-decoration: none;
     font-size: 15px;
+    letter-spacing: .5px;
 
 }
 p{
     font-size: 15px;
     line-height: 20px;
+    letter-spacing: .5px;
 }
 span{
     font-size: 15px;
