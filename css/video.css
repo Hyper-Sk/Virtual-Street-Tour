@@ -1,0 +1,163 @@
+
+
+.cities {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.city-box {
+  width: 200px;
+  height: 120px;
+  background: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#videoModal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 5;
+  display: none;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#youtubeFrame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78vh;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 56.25vw;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+/* Invisible layer above video */
+.video-overlay {
+  -webkit-user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.video-overlay .sidebar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  background: #00d2fc;
+  background: linear-gradient(
+    195deg,
+    rgb(109, 0, 252) 1%,
+    rgba(0, 117, 234, 1) 99%
+  );
+  border-radius: 15px;
+  padding: 60px 15px 25px 15px;
+  gap: 15px;
+  width: 250px;
+  height: 80%;
+  z-index: 20;
+  overflow-y: auto;
+  display: none;
+}
+
+.video-overlay .sidebar{
+  scrollbar-width: none;
+  scrollbar-color: green;
+
+}
+.video-overlay .sidebar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+}
+.video-overlay .sidebar button:hover {
+  transform: translateX(5px);
+}
+
+.video-overlay .sidebar #closeBar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gainsboro; */
+}
+.video-overlay .sidebar #closeBar img {
+  width: 15px;
+}
+/* Back button above overlay */
+#backBtn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 20;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #00d2fc;
+  background: linear-gradient(
+    195deg,
+    rgb(109, 0, 252) 1%,
+    rgba(0, 117, 234, 1) 99%
+  );
+  display: flex;
+}
+#backBtn img {
+  width: 12px;
+}
+
+#openMenu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 15;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #00d2fc;
+  background: linear-gradient(
+    195deg,
+    rgb(109, 0, 252) 1%,
+    rgba(0, 117, 234, 1) 99%
+  );
+  display: flex;
+  z-index: 15;
+}
+#openMenu img {
+  width: 15px;
+}
