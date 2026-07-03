@@ -9,21 +9,31 @@
     <title>Walking Street Tour</title>
 
     <!-- bootstrap icons  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- unicons  -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
+    />
     <script src="https://unicons.iconscout.com/release/v4.2.0/script/monochrome/bundle.js"></script>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css">
-
-
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css"
+    />
 
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/video.css">
   </head>
   <body>
-
     <!-- header  -->
     <header class="header">
       <div class="header-content">
@@ -37,43 +47,609 @@
           <div class="menu__link">
             <a href="./explore.html">Explore <i class="bi bi-globe2"></i></a>
           </div>
-         
         </div>
       </div>
     </header>
 
-
     <!-- explore  -->
     <div class="explore-area">
-        <div class="explore-area-content">
-            <div class="explore-area__item" >
-                <div class="thumbnail">
-                    <img class="bg-img" src="./images/cities/Amsterdam.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Amsterdam 🚶</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nulla velit aliquam exercitationem voluptates numquam animi, tenetur optio harum possimus.</p>
-                    <a href="./" class="btn">Begin Journey  <i class="bi bi-arrow-right"></i> </a>
-                </div>
-            </div>
-
-          
+      <div class="explore-area-content">
+        <!-- Amsterdam -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/amsterdam.png"
+              alt="Amsterdam city canals and historic streets in Netherlands"
+            />
+          </div>
+          <div class="text">
+            <h3>🇳🇱 Amsterdam</h3>
+            <p>
+              Famous for scenic canals, cycling culture, historic architecture,
+              vibrant neighborhoods, museums, and charming streets full of
+              character.
+            </p>
+            <a data-video="uL6z9v7Cf9Y" data-start="180" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
         </div>
+
+        <!-- Tokyo -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/tokyo.png"
+              alt="Tokyo modern skyline and busy streets in Japan"
+            />
+          </div>
+          <div class="text">
+            <h3>🇯🇵 Tokyo</h3>
+            <p>
+              Experience futuristic skyscrapers, neon districts, traditional
+              temples, bustling crossings, unique culture, and endless urban
+              exploration.
+            </p>
+            <a data-video="28ZjrtD_iL0" data-start="370" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Paris -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/paris.png"
+              alt="Paris streets cafes and landmarks in France"
+            />
+          </div>
+          <div class="text">
+            <h3>🇫🇷 Paris</h3>
+            <p>
+              Discover elegant boulevards, iconic landmarks, romantic cafes,
+              historic neighborhoods, artistic heritage, and timeless beauty.
+            </p>
+            <a data-video="oz1Mgu8e1N4" data-start="132" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- London -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/London.png"
+              alt="London city streets and famous landmarks in United Kingdom"
+            />
+          </div>
+          <div class="text">
+            <h3>🇬🇧 London</h3>
+            <p>
+              Explore royal landmarks, historic streets, diverse neighborhoods,
+              world-class museums, vibrant markets, and modern attractions.
+            </p>
+            <a data-video="8WlUiln-VeY" data-start="100" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- New York City -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/new-york.png"
+              alt="New York City skyline and busy streets in USA"
+            />
+          </div>
+          <div class="text">
+            <h3>🇺🇸 New York City</h3>
+            <p>
+              Walk through iconic avenues, towering skyscrapers, cultural
+              districts, famous parks, and energetic urban landscapes.
+            </p>
+            <a data-video="27Pv4Cg4EV4" data-start="800" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Dubai -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Dubai.png"
+              alt="Dubai modern skyline and luxury districts in UAE"
+            />
+          </div>
+          <div class="text">
+            <h3>🇦🇪 Dubai</h3>
+            <p>
+              Marvel at futuristic architecture, luxury developments, desert
+              surroundings, waterfront districts, and extraordinary cityscapes.
+            </p>
+            <a data-video="I9XB1gHvF74" data-start="275" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Singapore.png"
+              alt="Singapore modern city streets and skyline"
+            />
+          </div>
+          <div class="text">
+            <h3>🇸🇬 Singapore</h3>
+            <p>
+              Enjoy spotless streets, futuristic gardens, multicultural
+              districts, impressive architecture, and a stunning waterfront
+              skyline.
+            </p>
+            <a data-video="3MFlpVe93XU" data-start="57" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Rome -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Rome.png"
+              alt="Rome ancient landmarks and historic streets in Italy"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇹 Rome</h3>
+            <p>
+              Journey through ancient ruins, historic plazas, grand
+              architecture, charming streets, and centuries of heritage.
+            </p>
+            <a data-video="uOJkVLwnCNI" data-start="303" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Barcelona -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Barcelona.png"
+              alt="Barcelona colorful streets and architecture in Spain"
+            />
+          </div>
+          <div class="text">
+            <h3>🇪🇸 Barcelona</h3>
+            <p>
+              Admire unique architecture, lively avenues, Mediterranean
+              atmosphere, artistic landmarks, and vibrant local culture.
+            </p>
+            <a data-video="Z8SuL0R8dGI" data-start="163" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Istanbul -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Istanbul.png"
+              alt="Istanbul historic streets and skyline in Turkey"
+            />
+          </div>
+          <div class="text">
+            <h3>🇹🇷 Istanbul</h3>
+            <p>
+              Experience a fascinating blend of Europe and Asia through markets,
+              mosques, palaces, and waterfront streets.
+            </p>
+            <a data-video="nnm6qsXOnEk" data-start="525" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Abu Dhabi -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/abu-dhabi.png"
+              alt="Abu Dhabi street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇦🇪 Abu Dhabi</h3>
+            <p>
+              Discover grand mosques, waterfront promenades, modern
+              architecture, luxury attractions, and rich Emirati culture
+              throughout the city.
+            </p>
+            <a data-video="cFaGGCdNNZ8" data-start="275" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+    
+        <!-- Venice -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Venice.png"
+              alt="Venice street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇹 Venice</h3>
+            <p>
+              Wander through picturesque canals, charming bridges, historic
+              architecture, hidden alleys, and unforgettable waterfront scenery.
+            </p>
+            <a data-video="2BfHMnDOteA" data-start="303" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Tehran -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Tehran.png"
+              alt="Tehran street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇷 Tehran</h3>
+            <p>
+              Experience bustling avenues, mountain views, cultural museums,
+              historic palaces, modern districts, and vibrant local life.
+            </p>
+            <a data-video="wfmPGNfzm8g" data-start="358" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Seoul -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Seoul.png"
+              alt="Seoul street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇰🇷 Seoul</h3>
+            <p>
+              Enjoy futuristic skylines, traditional palaces, lively markets,
+              trendy neighborhoods, technology hubs, and vibrant nightlife.
+            </p>
+            <a data-video="unY9hqu9bEk" data-start="10" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+     
+
+        <!-- Osaka -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Osaka.png"
+              alt="Osaka street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇯🇵 Osaka</h3>
+            <p>
+              Explore energetic streets, delicious food districts, modern
+              attractions, historic landmarks, and welcoming local culture.
+            </p>
+            <a data-video="xP-wJbQcMOc" data-start="220" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Hong Kong -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Hong-Kong.png"
+              alt="Hong Kong street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇭🇰 Hong Kong</h3>
+            <p>
+              Admire dramatic skylines, busy markets, harbor views, modern
+              architecture, mountain scenery, and vibrant urban life.
+            </p>
+            <a data-video="PaJAm6NI9Qc" data-start="20" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Helsinki -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Helsinki.png"
+              alt="Helsinki street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇫🇮 Helsinki</h3>
+            <p>
+              Experience Nordic architecture, seaside landscapes, design
+              districts, peaceful parks, cultural attractions, and modern
+              living.
+            </p>
+            <a data-video="g5PmuZWgA88" data-start="10" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+
+        <!-- The Louvre -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/The-Louvre.png"
+              alt="The Louvre museum virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇫🇷 The Louvre</h3>
+            <p>
+              Explore world-famous art collections, magnificent galleries,
+              historic architecture, cultural treasures, and timeless
+              masterpieces.
+            </p>
+            <a data-video="y-1144Qq-Qc" data-start="160" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Mumbai -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Mumbai.png"
+              alt="Mumbai street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇳 Mumbai</h3>
+            <p>
+              Discover bustling streets, colonial architecture, coastal views,
+              vibrant markets, diverse culture, and dynamic city life.
+            </p>
+            <a data-video="5GwI8sUcEp8" data-start="44" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- New Delhi -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/New-Delhi.png"
+              alt="New Delhi street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇳 New Delhi</h3>
+            <p>
+              Experience historic monuments, government landmarks, vibrant
+              markets, cultural diversity, wide avenues, and modern development.
+            </p>
+            <a data-video="IiW8181-Dbo" data-start="28" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Taj Mahal -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Taj-Mahal.png"
+              alt="Taj Mahal virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇳 Taj Mahal</h3>
+            <p>
+              Admire breathtaking marble architecture, beautiful gardens,
+              historical significance, intricate craftsmanship, and timeless
+              beauty.
+            </p>
+            <a data-video="DtoEdB5Ju7o" data-start="40" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+     
+        <!-- Golconda Fort -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Golconda-Fort.png"
+              alt="Golconda Fort virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇮🇳 Golconda Fort</h3>
+            <p>
+              Walk through historic fortifications, royal palaces, scenic
+              viewpoints, fascinating history, and impressive stone
+              architecture.
+            </p>
+            <a data-video="Ok7p1aAKux8" data-start="94" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+
+        <!-- Bangkok -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Bangkok.png"
+              alt="Bangkok street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇹🇭 Bangkok</h3>
+            <p>
+              Experience lively street markets, ornate temples, bustling
+              neighborhoods, delicious cuisine, riverfront attractions, and
+              nightlife.
+            </p>
+            <a data-video="L_6HtFWVV6o" data-start="200" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Sydney -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/Sydney.png"
+              alt="Sydney street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇦🇺 Sydney</h3>
+            <p>
+              Enjoy famous harbor views, beautiful beaches, iconic architecture,
+              coastal walks, and vibrant urban experiences.
+            </p>
+            <a data-video="MJQ6ZyBNtCk" data-start="200" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Melbourne -->
+        <div class="explore-area__item">
+          <div class="thumbnail">
+            <img
+              class="bg-img"
+              src="./images/cities/melbourne.png"
+              alt="Melbourne street view virtual tour"
+            />
+          </div>
+          <div class="text">
+            <h3>🇦🇺 Melbourne</h3>
+            <p>
+              Explore artistic laneways, cultural attractions, trendy cafés,
+              beautiful parks, sporting venues, and creative energy.
+            </p>
+            <a data-video="Prz2VJOdtEE" data-start="40" class="btn walk"
+              >Begin Journey <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
 
-    <!-- footer  -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="left">
-          <img src="" alt="">
+
+
+
+     <!-- Fullscreen Video Modal -->
+     <div id="videoModal">
+      <div class="video-wrapper">
+        <iframe id="youtubeFrame" allow="autoplay" allowfullscreen> </iframe>
+        <div class="video-overlay">
+          <button id="backBtn">
+            <img src="./images/icons/left-chevron.png" alt="" />
+          </button>
+          <div id="openMenu">
+            <img src="./images/icons/more.png" alt="" />
+          </div>
+          <div class="sidebar">
+            <div id="closeBar">
+              <img src="./images/icons/red-cross.png" alt="" />
+            </div>
+            <button>New York 🇺🇸</button>
+            <button>Jersey 🇺🇸</button>
+            <button>Greece 🇺🇸</button>
+            <button>California 🇺🇸</button>
+            <button>Miami 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+            <button>New York 🇺🇸</button>
+          </div>
         </div>
+
+        <!-- Your custom back button -->
       </div>
-    </footer>
+    </div>
 
 
 
-
+    <script src="./js/video.js"></script>
   </body>
 </html>
