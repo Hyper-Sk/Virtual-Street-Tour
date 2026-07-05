@@ -1,64 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: "Google Sans Flex", sans-serif; */
-    font-family: "DM Sans", sans-serif;
+     font-family: "Lexend Deca", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
     color: #161616;
     transition: 0.3s;
 }
 
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 30px;
+    font-weight: 500;
 }
 
-h2{
+h2 {
     font-size: 30px;
+    font-weight: 500;
 }
 
-h3{
+h3 {
     font-size: 20px;
+    font-weight: 500;
 }
 
-h4{
-
+h4 {
+    font-weight: 500;
 }
 
-h5{
+h5 {}
 
-}
-
-a{
+a {
     text-decoration: none;
     font-size: 15px;
     letter-spacing: .5px;
 
 }
-p{
+
+p {
     font-size: 15px;
     line-height: 20px;
     letter-spacing: .5px;
 }
-span{
+
+span {
     font-size: 15px;
 
 }
 
 
-ul, li {
+ul,
+li {
     list-style: none;
     font-size: 15px;
 
 }
 
-img{
+img {
     width: 100%;
 }
+
+
+
+
+
+/* div{
+  --bg: radial-gradient(#000000 67%, rgba(0, 0, 0, 0) 68%);
+  background: linear-gradient(#ff1493 calc(50% - 13em), #ffff00 calc(50% + 13em));
+} */
+
+div.waves{
+  background-color: greenyellow;
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+
+.svg1{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.svg2{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  animation-name: move-right;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.spacer{
+  height: 100px;
+  width: 100%;
+}
+
+@keyframes example {
+  0%   {
+    left:0px;
+    top:0px;}
+  
+  50%  {
+    left:-2000px;
+    top:200px;}
+  
+  100% {
+    left:0px; 
+    top:0px;}
+}
+

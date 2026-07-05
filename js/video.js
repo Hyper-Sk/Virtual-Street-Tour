@@ -13,12 +13,36 @@ cityBoxes.forEach((box) => {
     console.log('first')
       const videoId = box.dataset.video;
       const videoStart = box.dataset.start
-    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
       
     // iframe.src = `${videoId}`
     modal.style.display = "block";
+
+    // stop captions 
+    let player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: `${videoId}`,
+        playerVars: {
+          controls: 0,
+          cc_load_policy: 0
+        },
+        events: {
+          onReady: onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      player.unloadModule('captions');
+    }
+
+    onYouTubeIframeAPIReady()
+
   });
 });
+
+
 
 openMenu.addEventListener("click", () => {
   sidebar.style.display = "flex";
@@ -32,5 +56,9 @@ backBtn.addEventListener("click", () => {
   iframe.src = ""; // stop video
   modal.style.display = "none";
 });
+
+
+
+
 
 
