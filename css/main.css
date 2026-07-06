@@ -19,24 +19,24 @@
 }
 
 .header-content .logo .text {
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 22px;
   color: white;
 }
 
-
 .header-content .menu {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-right: 0px;
 }
 
 .header-content .menu .menu__link a {
-  font-size: 16px;
+  font-size: 15px;
   color: white;
   padding: 10px 15px;
   border-radius: 7px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -55,16 +55,104 @@
   color: white;
 }
 
+/* ********************* hearder mobile  */
 
+.header-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.header-mobile .logo a {
+  color: white;
+  font-size: 18px;
+}
+.header-mobile .open {
+  cursor: pointer;
+}
+
+.header-mobile .open i {
+  color: white;
+  font-size: 25px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background: #00d2fc;
+  background: linear-gradient(195deg, #6d00fc 1%, rgba(0, 117, 234, 1) 99%);
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  background-color: #ffffff;
+  height: 100vh;
+  z-index: 99999;
+  box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.aside .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.aside .close i {
+  font-size: 25px;
+}
+
+.aside .menu {
+  display: grid;
+  gap: 5px;
+  padding-top: 60px;
+}
+.aside .menu .link {
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: 0s;
+}
+.aside .menu .link:hover {
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #00d2fc;
+  background: linear-gradient(195deg, #6d00fc 1%, rgba(0, 117, 234, 1) 99%);
+  color: white;
+}
+.aside .menu .link.active {
+  background: #00d2fc;
+  background: linear-gradient(195deg, #6d00fc 1%, rgba(0, 117, 234, 1) 99%);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+}
+
+/* ************* top border  */
+.topborder{
+  height: 8px;
+  background: linear-gradient(
+    135deg,
+    #5a2cff,
+    #000dff,
+    #bd00fc
+  );
+
+  background-size: 400% 400%;
+  animation: gradientFlow 10s ease infinite;
+}
 
 
 /***************** hero  *******************/
 
 .hero {
-  padding: 20px 20px 0;
+  padding: 40px 20px 10px;
 }
-
 
 .hero-content {
   text-align: center;
@@ -80,56 +168,126 @@
   margin-bottom: 15px;
   /* color: #ffe299; */
   letter-spacing: 1px;
+  background: #00d2fc;
+  background: linear-gradient(
+    195deg,
+    rgb(109, 0, 252) 1%,
+    rgba(0, 117, 234, 1) 99%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-content h1 {
   margin-bottom: 15px;
   /* color: white; */
   text-transform: uppercase;
+  line-height: 80px;
   letter-spacing: 1px;
+  font-weight: 400;
   font-size: 50px;
-
 }
-.hero-content h1 span{
-  background: #00d2fc; 
-  background: linear-gradient(195deg, rgb(109, 0, 252) 1%, rgba(0, 117, 234, 1) 99%); 
-  padding: 5px 20px;
+.hero-content h1 span {
+  background: linear-gradient(
+    135deg,
+    #00fcdf,
+    #01b68f,
+    #0f2bfb,
+    #e600ff,
+    #fc0000
+  );
+
+  background-size: 400% 400%;
+  animation: gradientFlow 10s ease infinite;
   color: white;
+  padding: 2px 20px;
+  font-weight: 400;
   font-size: 50px;
   border-radius: 10px;
 }
 
-.hero-content p {
-  /* color: white; */
-  max-width: 800px;
-  margin-inline: auto;
-
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+.hero-content p {
+  max-width: 800px;
+  margin-inline: auto;
+}
 
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 0px 0px;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+    line-height: 70px;
+  }
+  .hero-content h1 span {
+    font-size: 45px;
+  }
+}
 
+@media screen and (max-width: 576px) {
+  .hero-content h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+  }
 
+  .hero-content h1 span {
+    font-size: 45px;
+  }
+}
 
+/* *********************** breadcrumb area  */
 
+.breadcrumb {
+  padding: 80px 20px 40px;
+}
+.breadcrumb .breadcrumb-content {
+  max-width: 1400px;
+  position: relative;
+  margin-inline: auto;
+}
+.breadcrumb-content h1 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+.breadcrumb-content p{
+  text-align: center;
+}
 
+@media screen and (max-width:576px) {
+  .breadcrumb {
+    padding: 40px 20px 20px;
+  }
+  .breadcrumb-content h1 {
+    font-size: 25px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-/* explore area  */
+/************************** explore area  */
 
 .explore-area {
   padding: 20px 20px 60px 20px;
 }
 
-.explore-area>h2 {
+.explore-area > h2 {
   text-align: center;
   padding: 15px;
   margin-bottom: 20px;
@@ -160,9 +318,8 @@
   position: relative;
 }
 
-.explore-area__item .thumbnail .bg-img {}
-
-
+.explore-area__item .thumbnail .bg-img {
+}
 
 .explore-area__item .text {
   padding: 15px;
@@ -184,7 +341,11 @@
   display: block;
   text-align: center;
   background: #00d2fc;
-  background: linear-gradient(195deg, rgb(109, 0, 252) 1%, rgba(0, 117, 234, 1) 99%);
+  background: linear-gradient(
+    195deg,
+    rgb(109, 0, 252) 1%,
+    rgba(0, 117, 234, 1) 99%
+  );
   color: white;
   padding: 15px;
   outline: none;
@@ -198,29 +359,23 @@
   padding-left: 5px;
 }
 
-
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   .explore-area-content {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media screen and (max-width:765px) {
+@media screen and (max-width: 768px) {
   .explore-area-content {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   .explore-area-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
 
 /* footer  */
 
@@ -256,4 +411,26 @@
 .footer-content .logo img {
   width: 260px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    max-width: 1400px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-content {
+    max-width: 1400px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-content: center;
+  }
 }
