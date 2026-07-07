@@ -23,6 +23,8 @@
   letter-spacing: 1px;
   font-size: 22px;
   color: white;
+  font-family: "Marcellus", serif;
+  
 }
 
 .header-content .menu {
@@ -135,7 +137,7 @@
 
 /* ************* top border  */
 .topborder{
-  height: 8px;
+  height: 5px;
   background: linear-gradient(
     135deg,
     #5a2cff,
@@ -176,18 +178,21 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 .hero-content h1 {
+  font-family: "Marcellus", serif;
   margin-bottom: 15px;
   /* color: white; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 80px;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 50px;
 }
 .hero-content h1 span {
+  font-family: "Marcellus", serif;
   background: linear-gradient(
     135deg,
     #00fcdf,
@@ -262,11 +267,16 @@
   margin-inline: auto;
 }
 .breadcrumb-content h1 {
-  font-weight: 400;
   text-align: center;
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-size: 40px;
+  font-family: "Marcellus", serif;
+}
+.breadcrumb-content h1 span{
+  font-size: 40px;
+  font-family: "Marcellus", serif;
+
 }
 .breadcrumb-content p{
   text-align: center;
@@ -301,6 +311,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  align-items: start;
 }
 
 .explore-area__item {
