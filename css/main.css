@@ -1,5 +1,5 @@
 .header {
-  padding: 15px 20px;
+  padding: 20px 20px;
   background-color: #252525;
   /* border-bottom: 1px solid gray; */
   /* background: #00d2fc;
@@ -105,7 +105,7 @@
 
 .aside .menu {
   display: grid;
-  gap: 5px;
+  /* gap: 5px; */
   padding-top: 60px;
 }
 .aside .menu .link {
@@ -153,15 +153,14 @@
 /***************** hero  *******************/
 
 .hero {
-  padding: 40px 20px 10px;
+  padding: 30px 20px 10px;
 }
 
 .hero-content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 1400px;
   margin-inline: auto;
-  /* background: #00d2fc; */
-  /* background: linear-gradient(195deg, rgb(109, 0, 252) 1%, rgba(0, 117, 234, 1) 99%); */
   padding: 30px 30px;
   border-radius: 18px;
 }
@@ -230,7 +229,7 @@
 
 @media screen and (max-width: 768px) {
   .hero-content {
-    padding: 0px 0px;
+    padding: 20px;
   }
   .hero-content h1 {
     font-size: 45px;
@@ -287,6 +286,9 @@
     padding: 40px 20px 20px;
   }
   .breadcrumb-content h1 {
+    font-size: 25px;
+  }
+  .breadcrumb-content h1 span {
     font-size: 25px;
   }
 }
@@ -384,7 +386,26 @@
 
 @media screen and (max-width: 576px) {
   .explore-area-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
+  }
+  .explore-area__item {
+    /* border-radius: 10px; */
+  }
+  .explore-area__item .text h3 {
+    /* margin-bottom: 10px; */
+    /* font-size: 13px; */
+  }
+  
+  .explore-area__item .text p {
+    /* text-align: center; */
+    /* margin-bottom: 15px; */
+    /* font-size: 10px; */
+    /* line-height: 14px */
+  }
+  
+  .explore-area__item .text .btn {
+    /* font-size: 9px; */
+    /* border-radius: 8px; */
   }
 }
 
@@ -400,7 +421,7 @@
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -419,29 +440,29 @@
   transform: translateX(5px);
 }
 
-.footer-content .logo img {
+/* .footer-content .logo img {
   width: 260px;
   margin-bottom: 10px;
+} */
+.footer-content .logo .text {
+  font-size: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .footer-content {
-    max-width: 1400px;
-    margin-inline: auto;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    justify-content: center;
   }
 }
 
 @media screen and (max-width: 576px) {
   .footer-content {
-    max-width: 1400px;
-    margin-inline: auto;
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
-    justify-content: center;
   }
 }

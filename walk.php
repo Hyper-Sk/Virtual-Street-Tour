@@ -1,91 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-
+    
+    <?php include("./_head.php"); ?>
     <title>Walking Street Tour</title>
 
-    <!-- bootstrap icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-
-    <!-- unicons  -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
-    />
-    <script src="https://unicons.iconscout.com/release/v4.2.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css"
-    />
-
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/video.css" />
+    
   </head>
   <body>
-     <!-- header  -->
-     <header class="header">
-      <div class="header-content">
-        <div class="logo">
-          <a href="./" class="text">Virtual Street Tour 📍</a>
-          <!-- <img src="./images/logo-2.png" alt="" /> -->
-        </div>
-        <div class="menu">
-          <div class="menu__link">
-            <a href="./" class="">Home</a>
-          </div>
-          <div class="menu__link">
-            <a class="active" href="./walk.html"
-              >Walk </i
-            ></a>
-          </div>
-          <div class="menu__link">
-            <a href="./drive.html">Drive </a>
-          </div>
-          <div class="menu__link">
-            <a href="./fly.html">Fly </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="header-mobile">
-        <div class="logo">
-            <a href="./">Virtual Street Tour 📍</a>
-        </div>
-        <div class="open">
-            <i class="uil uil-bars"></i>
-        </div>
-      </div>
-
-      <aside class="aside">
-        <div class="close">
-          <i class="uil uil-times"></i>
-        </div>
-        <div class="menu">
-          <a href="./" class="link ">Home</a>
-          <a href="./walk.html" class="link active">Walk</a>
-          <a href="./drive.html" class="link ">Drive</a>
-          <a href="./fly.html" class="link ">Fly</a>
-          <a href="./monuments.html" class="link ">Monuments</a>
-          <a href="./window.html" class="link ">Window</a>
-          <a href="./countries.html" class="link ">Countries</a>
-          <a href="./live.html" class="link ">Live</a>
-        </div>
-      </aside>
-
-
-    </header>
+  <?php $isWalk= true; ?>
+  
+    <!-- header  -->
+  <?php include("./__header.php"); ?>
 
     <div class="topborder"></div>
 
@@ -96,7 +23,6 @@
         <p>Explore famous cities, landmarks, attractions, and streets worldwide virtually.</p>
       </div>
     </div>
-
 
     <!-- explore  -->
     <div class="explore-area">
@@ -255,7 +181,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/London.png"
+              src="./images/cities/london.png"
               alt="London city streets and famous landmarks in United Kingdom"
             />
           </div>
@@ -276,7 +202,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/sweden.png"
+              src="./images/cities/stockholm.png"
               alt="Sweden street view virtual tour"
             />
           </div>
@@ -382,7 +308,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Dubai.png"
+              src="./images/cities/dubai.png"
               alt="Dubai modern skyline and luxury districts in UAE"
             />
           </div>
@@ -403,7 +329,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Singapore.png"
+              src="./images/cities/singapore.png"
               alt="Singapore modern city streets and skyline"
             />
           </div>
@@ -425,7 +351,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Rome.png"
+              src="./images/cities/rome.png"
               alt="Rome ancient landmarks and historic streets in Italy"
             />
           </div>
@@ -446,7 +372,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Barcelona.png"
+              src="./images/cities/barcelona.png"
               alt="Barcelona colorful streets and architecture in Spain"
             />
           </div>
@@ -467,7 +393,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Istanbul.png"
+              src="./images/cities/istanbul.png"
               alt="Istanbul historic streets and skyline in Turkey"
             />
           </div>
@@ -510,7 +436,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Venice.png"
+              src="./images/cities/venice.png"
               alt="Venice street view virtual tour"
             />
           </div>
@@ -531,7 +457,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Tehran.png"
+              src="./images/cities/tehran.png"
               alt="Tehran street view virtual tour"
             />
           </div>
@@ -552,7 +478,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Seoul.png"
+              src="./images/cities/seoul.png"
               alt="Seoul street view virtual tour"
             />
           </div>
@@ -573,7 +499,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Osaka.png"
+              src="./images/cities/osaka.png"
               alt="Osaka street view virtual tour"
             />
           </div>
@@ -594,7 +520,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Hong-Kong.png"
+              src="./images/cities/hong-kong.png"
               alt="Hong Kong street view virtual tour"
             />
           </div>
@@ -615,7 +541,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Helsinki.png"
+              src="./images/cities/helsinki.png"
               alt="Helsinki street view virtual tour"
             />
           </div>
@@ -637,7 +563,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/switzerland.png"
+              src="./images/cities/grindelwald.png"
               alt="Switzerland street view virtual tour"
             />
           </div>
@@ -679,7 +605,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Mumbai.png"
+              src="./images/cities/mumbai.png"
               alt="Mumbai street view virtual tour"
             />
           </div>
@@ -700,7 +626,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/New-Delhi.png"
+              src="./images/cities/new-delhi.png"
               alt="New Delhi street view virtual tour"
             />
           </div>
@@ -723,7 +649,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Golconda-Fort.png"
+              src="./images/cities/golconda-fort.png"
               alt="Golconda Fort virtual tour"
             />
           </div>
@@ -745,7 +671,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Bangkok.png"
+              src="./images/cities/bangkok.png"
               alt="Bangkok street view virtual tour"
             />
           </div>
@@ -767,7 +693,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Sydney.png"
+              src="./images/cities/sydney.png"
               alt="Sydney street view virtual tour"
             />
           </div>
@@ -1171,6 +1097,8 @@
         <!-- Your custom back button -->
       </div>
     </div>
+
+    <?php include "./__footer.php" ?>
 
     <script src="./js/video.js"></script>
     <script src="./js/cities.js"></script>

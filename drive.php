@@ -8,66 +8,23 @@
 
     <title>Driving Tour</title>
 
-    <!-- bootstrap icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-
-    <!-- unicons  -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
-    />
-    <script src="https://unicons.iconscout.com/release/v4.2.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css"
-    />
-
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/video.css" />
+    <?php include "./_head.php" ?>
   </head>
   <body>
-    <!-- header  -->
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">
-          <div class="text">Virtual Street Tour</div>
-          <!-- <img src="./images/logo-2.png" alt="" /> -->
-        </div>
-        <div class="menu">
-          <div class="menu__link">
-            <a href="./" class="">Home</a>
-          </div>
-          <div class="menu__link">
-            <a href="./walk.html"
-              >Walk </i
-            ></a>
-          </div>
-          <div class="menu__link">
-            <a href="./drive.html" class="">Drive </a>
-          </div>
-          <div class="menu__link">
-            <a href="./fly.html" class="active">Fly </a>
-          </div>
-        </div>
-      </div>
-
-     
-    </header>
-
+  <?php $isDrive = true; ?>
    
+  <?php include "./__header.php" ?>
+    <div class="topborder"></div>
 
 
-
-  
-
+    <!-- breadcrumb  -->
+    <div class="breadcrumb">
+      <div class="breadcrumb-content">
+        <h1>Virtual Driving Tour 🚗</h1>
+        <!-- <div class="box"></div> -->
+        <p>Experience scenic roads, city drives, and destinations worldwide virtually.</p>
+      </div>
+    </div>
 
    
     <!-- explore  -->
@@ -78,7 +35,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/The-Louvre.png"
+              src="./images/cities/the-louvre.png"
               alt="The Louvre museum virtual tour"
             />
           </div>
@@ -118,6 +75,9 @@
       </div>
     </div>
 
+
+    <?php include("./__footer.php"); ?>
+    
     <!-- Fullscreen Video Modal -->
     <div id="videoModal">
       <div class="video-wrapper">
@@ -166,5 +126,6 @@
     </div>
 
     <script src="./js/video.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

@@ -1,75 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-
+    
+  <?php include "./_head.php" ?>
     <title>Monuments Street Tour</title>
 
-    <!-- bootstrap icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-
-    <!-- unicons  -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
-    />
-    <script src="https://unicons.iconscout.com/release/v4.2.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css"
-    />
-
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/video.css">
   </head>
   <body>
-   <!-- header  -->
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">
-          <div class="text">Virtual Street Tour</div>
-          <!-- <img src="./images/logo-2.png" alt="" /> -->
-        </div>
-        <div class="menu">
-          <div class="menu__link">
-            <a href="./" class="active">Home</a>
-          </div>
-          <div class="menu__link">
-            <a href="./walk.html"
-              >Walk </i
-            ></a>
-          </div>
-          <div class="menu__link">
-            <a href="./drive.html">Drive </a>
-          </div>
-          <div class="menu__link">
-            <a href="./fly.html">Fly </a>
-          </div>
-        </div>
-      </div>
-    </header>
+  <?php $isMonuments = true; ?>
+  <!-- header  -->
+  <?php include "./__header.php" ?>
 
     <div class="topborder"></div>
 
     <div class="breadcrumb">
       <div class="breadcrumb-content">
-        <h1>Virtual <span> Monument Tour</span>🏛️</h1>
+        <h1>Virtual <span> Monument Tour </span>🏛️</h1>
         <!-- <div class="box"></div> -->
         <p>Visit historic monuments, iconic landmarks, and cultural heritage sites.</p>
       </div>
     </div>
-
 
     <!-- explore  -->
     <div class="explore-area">
@@ -250,7 +200,7 @@
             <div class="thumbnail">
               <img
                 class="bg-img"
-                src="./images/cities/The-Louvre.png"
+                src="./images/cities/the-louvre.png"
                 alt="The Louvre museum virtual tour"
               />
             </div>
@@ -314,10 +264,8 @@
       </div>
     </div>
 
-
-
-
-
+    <!-- footer  -->
+    <?php include "./__footer.php" ?>
 
      <!-- Fullscreen Video Modal -->
      <div id="videoModal">
@@ -366,8 +314,7 @@
       </div>
     </div>
 
-
-
     <script src="./js/video.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

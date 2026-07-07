@@ -1,108 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
 
+    <?php include("./_head.php") ?>
     <title>Virtual Street Tour</title>
 
-    <!-- bootstrap icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-
-    <!-- unicons  -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
-    />
-    <script src="https://unicons.iconscout.com/release/v4.2.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css"
-    />
-
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    
   </head>
   <body>
-    <!-- header  -->
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">
-          <a href="./" class="text">Virtual Street Tour 📍</a>
-          <!-- <img src="./images/logo-2.png" alt="" /> -->
-        </div>
-        <div class="menu">
-          <div class="menu__link">
-            <a href="./" class="active">Home</a>
-          </div>
-          <div class="menu__link">
-            <a href="./walk.html"
-              >Walk </i
-            ></a>
-          </div>
-          <div class="menu__link">
-            <a href="./drive.html">Drive </a>
-          </div>
-          <div class="menu__link">
-            <a href="./fly.html">Fly </a>
-          </div>
-          <div class="menu__link">
-            <a href="./fly.html">Monuments </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="header-mobile">
-        <div class="logo">
-            <a href="./">Virtual Street Tour 📍</a>
-        </div>
-        <div class="open">
-            <i class="uil uil-bars"></i>
-        </div>
-      </div>
-
-      <aside class="aside">
-        <div class="close">
-          <i class="uil uil-times"></i>
-        </div>
-        <div class="menu">
-          <a href="./" class="link active">Home</a>
-          <a href="./walk.html" class="link ">Walk</a>
-          <a href="./drive.html" class="link ">Drive</a>
-          <a href="./fly.html" class="link ">Fly</a>
-          <a href="./monuments.html" class="link ">Monuments</a>
-          <a href="./window.html" class="link ">Window</a>
-          <a href="./countries.html" class="link ">Countries</a>
-          <a href="./live.html" class="link ">Live</a>
-        </div>
-      </aside>
-
-
-    </header>
-
-
+    <?php $isHome = true; ?>
     
+    <!-- header  -->
+    <?php include("./__header.php") ?>
+    
+    <!-- border  -->
     <div class="topborder"></div>
 
 
-    <section class="hero">
-      <div class="hero-content">
-        <h3>Welcome To</h3>
-        <h1>Virtual Steet <span>Tour</span>📍</h1>
-        <p>
-          Explore famous cities, landmarks, tourist attractions, and hidden gems worldwide from home.
-        </p>
-      </div>
-    </section>
+    <!-- hero  -->
+    <?php include("./__hero.php") ?>
 
     <!-- explore  -->
     <div class="explore-area">
@@ -117,7 +34,7 @@
             <p>
               Explore famous city streets, tourist attractions, local neighborhoods, and cultural landmarks through immersive virtual walking tours worldwide.
             </p>
-            <a href="./walk.html" class="btn"
+            <a href="./walk.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -132,7 +49,7 @@
             <p>
               Experience scenic road trips, city drives, and popular travel destinations with inter virtual driving tours online.
             </p>
-            <a href="./drive.html" class="btn"
+            <a href="./drive.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -147,7 +64,7 @@
             <p>
               Enjoy stunning aerial views of cities, landmarks, coastlines, and natural wonders through breathtaking virtual flight tours.
             </p>
-            <a href="./fly.html" class="btn"
+            <a href="./fly.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -162,7 +79,7 @@
             <p>
               Discover historic monuments, world-famous landmarks, heritage sites, and architectural masterpieces with virtual monument tours.
             </p>
-            <a href="./monuments.html" class="btn"
+            <a href="./monuments.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -177,7 +94,7 @@
             <p>
               Watch live city views, street scenes, and beautiful destinations worldwide through an inter virtual travel window.
             </p>
-            <a href="./window.html" class="btn"
+            <a href="./window.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -192,7 +109,7 @@
             <p>
               Explore countries, cultures, attractions, landscapes, and major cities with immersive virtual country tours from anywhere.
             </p>
-            <a href="./countries.html" class="btn"
+            <a href="./countries.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -207,7 +124,7 @@
             <p>
               Watch real-world travel footage, city life, nature scenes, and popular destinations with authentic live video experiences.
             </p>
-            <a href="./live.html" class="btn"
+            <a href="./live.php" class="btn"
               >Begin Journey <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -233,34 +150,7 @@
     </div>
 
     <!-- footer  -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="logo">
-          <img src="./images/logo.png" alt="" />
-          <p>
-            Virtual Street Tour lets you explore cities, landmarks, and hidden gems around the world through immersive street-level experiences. Discover new destinations, plan your travels, and enjoy virtual journeys from anywhere, anytime.
-          </p>
-        </div>
-       
-        <div class="about">
-          <h3>About</h3>
-          <a href="./">About</a>
-          <a href="./">Our Mission</a>
-          <a href="./">Terms</a>
-          <a href="./">Privacy</a>
-        </div>
-        <div class="social">
-          <h3>Social</h3>
-          <a href="./"><i class="uil uil-facebook-f"></i> FaceBook</a>
-          <a href="./"><i class="uil uil-instagram"></i> Instagram</a>
-        </div>
-        <div class="contact">
-          <h3>Contact</h3>
-          <a href="./"><i class="uil uil-envelope"></i> example@gmail.com</a>
-        </div>
-     
-      </div>
-    </footer>
+    <?php include("./__footer.php") ?>
 
     <script src="./js/header.js"></script>
   </body>

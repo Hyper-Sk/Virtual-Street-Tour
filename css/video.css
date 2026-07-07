@@ -161,3 +161,10 @@
 #openMenu img {
   width: 15px;
 }
+
+
+@media screen and (max-width:576px) {
+  #openMenu {
+    display: none;
+  }
+}

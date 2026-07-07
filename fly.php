@@ -1,70 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <title>Vitual Flying Tour</title>
 
-    <title>Driving Tour</title>
+  <?php include("./_head.php"); ?>
 
-    <!-- bootstrap icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-
-    <!-- unicons  -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
-    />
-    <script src="https://unicons.iconscout.com/release/v4.2.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/thinline.css"
-    />
-
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/video.css" />
   </head>
   <body>
+  <?php $isFly = true; ?>
     <!-- header  -->
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">
-          <div class="text">Virtual Street Tour</div>
-          <!-- <img src="./images/logo-2.png" alt="" /> -->
-        </div>
-        <div class="menu">
-          <div class="menu__link">
-            <a href="./" class="">Home</a>
-          </div>
-          <div class="menu__link">
-            <a href="./walk.html"
-              >Walk </i
-            ></a>
-          </div>
-          <div class="menu__link">
-            <a href="./drive.html" class="">Drive </a>
-          </div>
-          <div class="menu__link">
-            <a href="./fly.html" class="active">Fly </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-   
-
+    <?php include("./__header.php"); ?>
 
     <div class="topborder"></div>
-
 
     <!-- breadcrumb  -->
     <div class="breadcrumb">
@@ -74,9 +21,6 @@
         <p>Discover breathtaking aerial views, cities, landmarks, and landscapes worldwide.</p>
       </div>
     </div>
-  
-
-
    
     <!-- explore  -->
     <div class="explore-area">
@@ -86,7 +30,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/The-Louvre.png"
+              src="./images/cities/the-louvre.png"
               alt="The Louvre museum virtual tour"
             />
           </div>
@@ -103,28 +47,12 @@
           </div>
         </div>
 
-        <!-- New Delhi -->
-        <div class="explore-area__item">
-          <div class="thumbnail">
-            <img
-              class="bg-img"
-              src="./images/cities/New-Delhi.png"
-              alt="New Delhi street view virtual tour"
-            />
-          </div>
-          <div class="text">
-            <h3>🇮🇳 New Delhi</h3>
-            <p>
-              Experience historic monuments, government landmarks, vibrant
-              markets, cultural diversity, wide avenues, and modern development.
-            </p>
-            <a data-video="IiW8181-Dbo" data-start="28" class="btn walk"
-              >Begin Journey <i class="bi bi-arrow-right"></i
-            ></a>
-          </div>
-        </div>
+       
       </div>
     </div>
+
+    <!-- footer  -->
+    <?php include("./__footer.php"); ?>
 
     <!-- Fullscreen Video Modal -->
     <div id="videoModal">
@@ -174,5 +102,6 @@
     </div>
 
     <script src="./js/video.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>
