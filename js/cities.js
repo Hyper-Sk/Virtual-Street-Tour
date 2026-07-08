@@ -9,7 +9,5 @@ const cities = [...document.querySelectorAll(".explore-area__item")].map(
   })
 );
 
-
-console.log(cities);
-
+// console.log(cities)
 

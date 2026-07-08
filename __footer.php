@@ -11,10 +11,10 @@
        
         <div class="about">
           <h3>About</h3>
-          <a href="./">About</a>
-          <a href="./">Our Mission</a>
-          <a href="./">Terms</a>
-          <a href="./">Privacy</a>
+          <a href="./"><i class="uil uil-user"></i> About</a>
+          <a href="./"><i class="uil uil-bullseye"></i> Our Mission</a>
+          <a href="./"><i class="uil uil-info-circle"></i> Terms</a>
+          <a href="./"><i class="uil uil-shield"></i> Privacy</a>
         </div>
         <div class="social">
           <h3>Social</h3>
@@ -28,3 +28,6 @@
      
       </div>
     </footer>
+      <div class="copyright">
+        <p>All Right Reserved © Vitual Street Tour</p>
+    </div>

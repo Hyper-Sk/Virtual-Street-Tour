@@ -11,7 +11,6 @@
     <!-- header  -->
     <?php include("./__header.php"); ?>
 
-    <div class="topborder"></div>
 
     <!-- breadcrumb  -->
     <div class="breadcrumb">
@@ -73,27 +72,7 @@
             <button>Jersey 🇺🇸</button>
             <button>Greece 🇺🇸</button>
             <button>California 🇺🇸</button>
-            <button>Miami 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
+           
           </div>
         </div>
 

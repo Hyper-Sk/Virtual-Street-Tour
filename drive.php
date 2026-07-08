@@ -14,13 +14,12 @@
   <?php $isDrive = true; ?>
    
   <?php include "./__header.php" ?>
-    <div class="topborder"></div>
 
 
     <!-- breadcrumb  -->
     <div class="breadcrumb">
       <div class="breadcrumb-content">
-        <h1>Virtual Driving Tour 🚗</h1>
+        <h1>Virtual Driving Tour</h1>
         <!-- <div class="box"></div> -->
         <p>Experience scenic roads, city drives, and destinations worldwide virtually.</p>
       </div>
@@ -57,7 +56,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/New-Delhi.png"
+              src="./images/cities/new-delhi.png"
               alt="New Delhi street view virtual tour"
             />
           </div>
@@ -93,31 +92,9 @@
             <div id="closeBar">
               <img src="./images/icons/red-cross.png" alt="" />
             </div>
-            <button>New York 🇺🇸</button>
-            <button>Jersey 🇺🇸</button>
-            <button>Greece 🇺🇸</button>
-            <button>California 🇺🇸</button>
-            <button>Miami 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
+            <div id="cityContainer">
+                
+            </div>
           </div>
         </div>
 
@@ -127,5 +104,6 @@
 
     <script src="./js/video.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/cities.js"></script>
   </body>
 </html>

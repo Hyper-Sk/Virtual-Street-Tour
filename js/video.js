@@ -11,10 +11,10 @@ const closeMenu = document.getElementById("closeBar");
 cityBoxes.forEach((box) => {
   box.addEventListener("click", () => {
     console.log('first')
-      const videoId = box.dataset.video;
-      const videoStart = box.dataset.start
+    const videoId = box.dataset.video;
+    const videoStart = box.dataset.start
     iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
-      
+
     // iframe.src = `${videoId}`
     modal.style.display = "block";
 
@@ -56,6 +56,44 @@ backBtn.addEventListener("click", () => {
   iframe.src = ""; // stop video
   modal.style.display = "none";
 });
+
+
+
+function onUrlChange() {
+  console.log("URL Changed:", location.href);
+  iframe.src = ""; // stop video
+  modal.style.display = "none";
+}
+
+(() => {
+  let currentUrl = location.href;
+
+  const observer = new MutationObserver(() => {
+    if (currentUrl !== location.href) {
+      currentUrl = location.href;
+      onUrlChange();
+    }
+  });
+
+  observer.observe(document, {
+    subtree: true,
+    childList: true
+  });
+
+  const pushState = history.pushState;
+  history.pushState = function () {
+    pushState.apply(this, arguments);
+    onUrlChange();
+  };
+
+  const replaceState = history.replaceState;
+  history.replaceState = function () {
+    replaceState.apply(this, arguments);
+    onUrlChange();
+  };
+
+  window.addEventListener("popstate", onUrlChange);
+})();
 
 
 

@@ -2,6 +2,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- bootstrap icons  -->
 <link
@@ -27,3 +28,4 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/video.css" />
+    <link rel="stylesheet" href="./css/popup.css" />

@@ -11,12 +11,11 @@
     <!-- header  -->
     <?php include("./__header.php"); ?>
 
-    <div class="topborder"></div>
 
     <!-- breadcrumb  -->
     <div class="breadcrumb">
       <div class="breadcrumb-content">
-        <h1>Virtual Flying Tour ✈️</h1>
+        <h1>Virtual Flying Tour </h1>
         <!-- <div class="box"></div> -->
         <p>Discover breathtaking aerial views, cities, landmarks, and landscapes worldwide.</p>
       </div>

@@ -11,11 +11,10 @@
   <!-- header  -->
   <?php include "./__header.php" ?>
 
-    <div class="topborder"></div>
 
     <div class="breadcrumb">
       <div class="breadcrumb-content">
-        <h1>Virtual <span> Monument Tour </span>🏛️</h1>
+        <h1>Virtual Monument Tour </h1>
         <!-- <div class="box"></div> -->
         <p>Visit historic monuments, iconic landmarks, and cultural heritage sites.</p>
       </div>
@@ -52,7 +51,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Taj-Mahal.png"
+              src="./images/cities/taj-mahal.png"
               alt="Taj Mahal virtual tour"
             />
           </div>
@@ -222,7 +221,7 @@
             <div class="thumbnail">
               <img
                 class="bg-img"
-                src="./images/cities/New-Delhi.png"
+                src="./images/cities/new-delhi.png"
                 alt="New Delhi street view virtual tour"
               />
             </div>
@@ -244,7 +243,7 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/Golconda-Fort.png"
+              src="./images/cities/golconda-fort.png"
               alt="Golconda Fort virtual tour"
             />
           </div>

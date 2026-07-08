@@ -11,7 +11,6 @@
     <!-- header  -->
     <?php include("./__header.php"); ?>
 
-    <div class="topborder"></div>
 
     <!-- breadcrumb  -->
     <div class="breadcrumb">

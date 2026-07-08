@@ -1,0 +1,55 @@
+.rotate-banner {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 12px 16px;
+    background: rgba(25, 25, 25, 0.95);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+
+    font-size: 14px;
+    z-index: 2147483647;
+
+    transform: translateY(120%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: transform .3s ease, opacity .3s ease, visibility .3s ease;
+}
+
+.rotate-banner.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.rotate-banner span {
+    flex: 1;
+    color: #fff;
+}
+
+.rotate-banner button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+@media (min-width: 769px) {
+    .rotate-banner {
+        display: none;
+    }
+}

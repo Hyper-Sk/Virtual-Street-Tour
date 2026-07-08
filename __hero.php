@@ -1,9 +1,10 @@
 <section class="hero">
       <div class="hero-content">
-        <h3>Welcome To</h3>
-        <h1>Virtual Steet <span>Tour</span>📍</h1>
+        <h1>Take a Virtual Vacation <br> from Home</h1>
+        <!-- <h3>Explore Beautiful Places Around the World</h3> -->
         <p>
-          Explore famous cities, landmarks, tourist attractions, and hidden gems worldwide from home.
+        Enjoy a virtual vacation by exploring beautiful beaches, mountains, cities, landmarks, and scenic destinations from home. Experience virtual travel and discover amazing places anytime with immersive virtual tours.
         </p>
+        <a href="./walk.php">Start Your Virtual Vacation <i class="uil uil-arrow-right"></i></a>
       </div>
     </section>

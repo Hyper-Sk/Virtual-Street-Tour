@@ -13,10 +13,6 @@
     
     <!-- header  -->
     <?php include("./__header.php") ?>
-    
-    <!-- border  -->
-    <div class="topborder"></div>
-
 
     <!-- hero  -->
     <?php include("./__hero.php") ?>
@@ -35,7 +31,7 @@
               Explore famous city streets, tourist attractions, local neighborhoods, and cultural landmarks through immersive virtual walking tours worldwide.
             </p>
             <a href="./walk.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Explore Places 
             </a>
           </div>
         </div>
@@ -50,7 +46,7 @@
               Experience scenic road trips, city drives, and popular travel destinations with inter virtual driving tours online.
             </p>
             <a href="./drive.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey
             </a>
           </div>
         </div>
@@ -65,7 +61,7 @@
               Enjoy stunning aerial views of cities, landmarks, coastlines, and natural wonders through breathtaking virtual flight tours.
             </p>
             <a href="./fly.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey
             </a>
           </div>
         </div>
@@ -80,7 +76,7 @@
               Discover historic monuments, world-famous landmarks, heritage sites, and architectural masterpieces with virtual monument tours.
             </p>
             <a href="./monuments.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey 
             </a>
           </div>
         </div>
@@ -95,7 +91,7 @@
               Watch live city views, street scenes, and beautiful destinations worldwide through an inter virtual travel window.
             </p>
             <a href="./window.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey 
             </a>
           </div>
         </div>
@@ -110,7 +106,7 @@
               Explore countries, cultures, attractions, landscapes, and major cities with immersive virtual country tours from anywhere.
             </p>
             <a href="./countries.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey 
             </a>
           </div>
         </div>
@@ -125,7 +121,7 @@
               Watch real-world travel footage, city life, nature scenes, and popular destinations with authentic live video experiences.
             </p>
             <a href="./live.php" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey 
             </a>
           </div>
         </div>
@@ -142,7 +138,7 @@
               animi, tenetur optio harum possimus.
             </p>
             <a href="./" class="btn"
-              >Begin Journey <i class="bi bi-arrow-right"></i>
+              >Begin Journey 
             </a>
           </div>
         </div>
@@ -152,6 +148,12 @@
     <!-- footer  -->
     <?php include("./__footer.php") ?>
 
+     <!-- popup  -->
+     <?php include("./__popup.php") ?>
+
     <script src="./js/header.js"></script>
+
+
+
   </body>
 </html>
