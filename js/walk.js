@@ -72,6 +72,15 @@ const walks = [
         start: 171
     },
     {
+        city: "Chongqing",
+        flag: "🇨🇳",
+        image: "chongqing.png",
+        alt: "Chongqing skyline, mountain city roads, bridges, and rivers in China",
+        description: "Discover dramatic mountain roads, towering skyscrapers, scenic rivers, illuminated bridges, bustling streets, and Chongqing's unforgettable city views.",
+        videoId: "JvzjeE4pNjo",
+        start: 426
+    },
+    {
         city: "Dubai",
         flag: "🇦🇪",
         image: "dubai.png",

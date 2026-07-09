@@ -18,27 +18,6 @@ cityBoxes.forEach((box) => {
     // iframe.src = `${videoId}`
     modal.style.display = "block";
 
-    // stop captions 
-    let player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: `${videoId}`,
-        playerVars: {
-          controls: 0,
-          cc_load_policy: 0
-        },
-        events: {
-          onReady: onPlayerReady
-        }
-      });
-    }
-
-    function onPlayerReady(event) {
-      player.unloadModule('captions');
-    }
-
-    onYouTubeIframeAPIReady()
-
   });
 });
 
@@ -57,46 +36,7 @@ backBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-
-
-function onUrlChange() {
-  console.log("URL Changed:", location.href);
-  iframe.src = ""; // stop video
-  modal.style.display = "none";
-}
-
-(() => {
-  let currentUrl = location.href;
-
-  const observer = new MutationObserver(() => {
-    if (currentUrl !== location.href) {
-      currentUrl = location.href;
-      onUrlChange();
-    }
-  });
-
-  observer.observe(document, {
-    subtree: true,
-    childList: true
-  });
-
-  const pushState = history.pushState;
-  history.pushState = function () {
-    pushState.apply(this, arguments);
-    onUrlChange();
-  };
-
-  const replaceState = history.replaceState;
-  history.replaceState = function () {
-    replaceState.apply(this, arguments);
-    onUrlChange();
-  };
-
-  window.addEventListener("popstate", onUrlChange);
-})();
-
-
-
-
-
-
+// window.addEventListener("popstate", (e) => {
+//   iframe.src = ""; // stop video
+//   modal.style.display = "none";
+// });

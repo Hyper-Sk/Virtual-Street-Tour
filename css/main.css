@@ -68,6 +68,7 @@
 .header-mobile .logo a {
   color: white;
   font-size: 18px;
+  padding: 10px 0;
 }
 
 .header-mobile .open {

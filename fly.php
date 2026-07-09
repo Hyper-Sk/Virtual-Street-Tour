@@ -29,18 +29,18 @@
           <div class="thumbnail">
             <img
               class="bg-img"
-              src="./images/cities/the-louvre.png"
+              src="./images/cities/new-york.png"
               alt="The Louvre museum virtual tour"
             />
           </div>
           <div class="text">
-            <h3>🇫🇷 The Louvre</h3>
+            <h3>🇫🇷 New York</h3>
             <p>
               Explore world-famous art collections, magnificent galleries,
               historic architecture, cultural treasures, and timeless
               masterpieces.
             </p>
-            <a data-video="y-1144Qq-Qc" data-start="160" class="btn walk"
+            <a data-video="qDdGKWJwf5w" data-start="0" class="btn walk"
               >Begin Journey <i class="bi bi-arrow-right"></i
             ></a>
           </div>

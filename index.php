@@ -8,6 +8,8 @@
     
   </head>
   <body>
+    <!-- Loader  -->
+    <?php include("./__loader.php") ?>
 
     <?php $isHome = true; ?>
     
@@ -28,10 +30,10 @@
           <div class="text">
             <h3>Walk Tour 🚶</h3>
             <p>
-              Explore famous city streets, tourist attractions, local neighborhoods, and cultural landmarks through immersive virtual walking tours worldwide.
+            Explore 100+ cities worldwide through immersive virtual walking tours from home.
             </p>
             <a href="./walk.php" class="btn"
-              >Explore Places 
+              >Walk  
             </a>
           </div>
         </div>
@@ -43,10 +45,10 @@
           <div class="text">
             <h3>Driving Tour 🚗</h3>
             <p>
-              Experience scenic road trips, city drives, and popular travel destinations with inter virtual driving tours online.
+            Explore 50+ scenic drives, road trips, and iconic destinations from your home.
             </p>
             <a href="./drive.php" class="btn"
-              >Begin Journey
+              >Drive  
             </a>
           </div>
         </div>
@@ -58,10 +60,10 @@
           <div class="text">
             <h3>Flying Tour ✈️</h3>
             <p>
-              Enjoy stunning aerial views of cities, landmarks, coastlines, and natural wonders through breathtaking virtual flight tours.
+            Fly above 50+ cities and famous landmarks with immersive virtual flight tours.
             </p>
             <a href="./fly.php" class="btn"
-              >Begin Journey
+              >Fly  
             </a>
           </div>
         </div>
@@ -73,10 +75,10 @@
           <div class="text">
             <h3>Monument 🏛</h3>
             <p>
-              Discover historic monuments, world-famous landmarks, heritage sites, and architectural masterpieces with virtual monument tours.
+            Explore 30+ iconic monuments, heritage sites, and famous landmarks with virtual monument tours.
             </p>
             <a href="./monuments.php" class="btn"
-              >Begin Journey 
+              >Explore  
             </a>
           </div>
         </div>
@@ -88,10 +90,11 @@
           <div class="text">
             <h3>Virtual Window 🏙️</h3>
             <p>
-              Watch live city views, street scenes, and beautiful destinations worldwide through an inter virtual travel window.
+            Watch live city views and street views worldwide from your home.
+
             </p>
             <a href="./window.php" class="btn"
-              >Begin Journey 
+              >Explore 
             </a>
           </div>
         </div>
@@ -103,10 +106,10 @@
           <div class="text">
             <h3>Travel Country 🌍</h3>
             <p>
-              Explore countries, cultures, attractions, landscapes, and major cities with immersive virtual country tours from anywhere.
+            Visit 100+ countries, famous landmarks, and hidden gems without leaving home.
             </p>
             <a href="./countries.php" class="btn"
-              >Begin Journey 
+              >Explore 
             </a>
           </div>
         </div>
@@ -118,10 +121,10 @@
           <div class="text">
             <h3>🔴 Live Footage</h3>
             <p>
-              Watch real-world travel footage, city life, nature scenes, and popular destinations with authentic live video experiences.
+            Watch real-world travel videos featuring cities, landmarks, nature, worldwide live.
             </p>
             <a href="./live.php" class="btn"
-              >Begin Journey 
+              >Explore 
             </a>
           </div>
         </div>
@@ -137,8 +140,8 @@
               Perferendis nulla velit aliquam exercitationem voluptates numquam
               animi, tenetur optio harum possimus.
             </p>
-            <a href="./" class="btn"
-              >Begin Journey 
+            <a  class="btn"
+              >comming soon 
             </a>
           </div>
         </div>
