@@ -10,6 +10,13 @@
         </div>
        
         <div class="about">
+          <h3>Links</h3>
+          <a href="./walk.php"><i class="uil uil-user-md"></i> Walking Tour </a>
+          <a href="./drive.php"><i class="uil uil-car-sideview"></i> Driving Tour</a>
+          <a href="./fly.php"><i class="uil uil-plane-departure"></i> Flying Tour</a>
+          <a href="./"><i class="uil uil-university"></i> Monuments Tour</a>
+        </div>
+        <div class="about">
           <h3>About</h3>
           <a href="./"><i class="uil uil-user"></i> About</a>
           <a href="./"><i class="uil uil-bullseye"></i> Our Mission</a>

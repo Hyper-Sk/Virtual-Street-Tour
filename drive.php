@@ -42,24 +42,37 @@
 
   <?php include("./__footer.php"); ?>
 
+  
   <!-- Fullscreen Video Modal -->
   <div id="videoModal">
     <div class="video-wrapper">
       <iframe id="youtubeFrame" allow="autoplay" allowfullscreen> </iframe>
       <div class="video-overlay">
+
+        <!-- close or go back button  -->
         <button id="backBtn">
           <img src="./images/icons/left-chevron.png" alt="" />
         </button>
+
+        <!-- full screen btn  -->
+        <div id="fullscreenBtn" onclick="openFullscreen()" >
+          <img src="./images/icons/fullscreen.png" alt="">
+        </div>
+
+        <!-- open sidebar btn  -->
         <div id="openMenu">
           <img src="./images/icons/more.png" alt="" />
         </div>
+
+        <!-- sidebar  -->
         <div class="sidebar">
           <div id="closeBar">
             <img src="./images/icons/red-cross.png" alt="" />
           </div>
           <div class="buttons">
-            <button data-video="" data-start="0" class="walk">Amsterdam 🇳🇱</button>
+            <!-- js code coming    -->
           </div>
+
         </div>
       </div>
 
@@ -67,6 +80,7 @@
     </div>
   </div>
 
+  
   <script src="./js/header.js"></script>
   <script src="./js/drive.js"></script>
   <script src="./js/video.js"></script>

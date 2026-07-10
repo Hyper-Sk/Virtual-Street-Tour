@@ -1,106 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
   <title>Vitual Flying Tour</title>
 
   <?php include("./_head.php"); ?>
 
-  </head>
-  <body>
+</head>
+
+<body>
   <?php $isFly = true; ?>
-    <!-- header  -->
-    <?php include("./__header.php"); ?>
+  <!-- header  -->
+  <?php include("./__header.php"); ?>
 
 
-    <!-- breadcrumb  -->
-    <div class="breadcrumb">
-      <div class="breadcrumb-content">
-        <h1>Virtual Flying Tour </h1>
-        <!-- <div class="box"></div> -->
-        <p>Discover breathtaking aerial views, cities, landmarks, and landscapes worldwide.</p>
-      </div>
+  <!-- breadcrumb  -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-content">
+      <h1>Virtual Flying Tour </h1>
+      <!-- <div class="box"></div> -->
+      <p>Discover breathtaking aerial views, cities, landmarks, and landscapes worldwide.</p>
     </div>
-   
-    <!-- explore  -->
-    <div class="explore-area">
-      <div class="explore-area-content">
-        <!-- The Louvre -->
-        <div class="explore-area__item">
-          <div class="thumbnail">
-            <img
-              class="bg-img"
-              src="./images/cities/new-york.png"
-              alt="The Louvre museum virtual tour"
-            />
-          </div>
-          <div class="text">
-            <h3>🇫🇷 New York</h3>
-            <p>
-              Explore world-famous art collections, magnificent galleries,
-              historic architecture, cultural treasures, and timeless
-              masterpieces.
-            </p>
-            <a data-video="qDdGKWJwf5w" data-start="0" class="btn walk"
-              >Begin Journey <i class="bi bi-arrow-right"></i
-            ></a>
-          </div>
+  </div>
+
+  <!-- explore  -->
+  <div class="explore-area">
+    <div class="explore-area-content">
+        <!-- js code coming  -->
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <?php include("./__footer.php"); ?>
+
+
+
+
+
+  <!-- Fullscreen Video Modal -->
+  <div id="videoModal">
+    <div class="video-wrapper">
+      <iframe id="youtubeFrame" allow="autoplay" allowfullscreen> </iframe>
+      <div class="video-overlay">
+
+        <!-- close or go back button  -->
+        <button id="backBtn">
+          <img src="./images/icons/left-chevron.png" alt="" />
+        </button>
+
+        <!-- full screen btn  -->
+        <div id="fullscreenBtn" onclick="openFullscreen()" >
+          <img src="./images/icons/fullscreen.png" alt="">
         </div>
 
-       
-      </div>
-    </div>
-
-    <!-- footer  -->
-    <?php include("./__footer.php"); ?>
-
-    <!-- Fullscreen Video Modal -->
-    <div id="videoModal">
-      <div class="video-wrapper">
-        <iframe id="youtubeFrame" allow="autoplay" allowfullscreen> </iframe>
-        <div class="video-overlay">
-          <button id="backBtn">
-            <img src="./images/icons/left-chevron.png" alt="" />
-          </button>
-          <div id="openMenu">
-            <img src="./images/icons/more.png" alt="" />
-          </div>
-          <div class="sidebar">
-            <div id="closeBar">
-              <img src="./images/icons/red-cross.png" alt="" />
-            </div>
-            <button>New York 🇺🇸</button>
-            <button>Jersey 🇺🇸</button>
-            <button>Greece 🇺🇸</button>
-            <button>California 🇺🇸</button>
-            <button>Miami 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-            <button>New York 🇺🇸</button>
-          </div>
+        <!-- open sidebar btn  -->
+        <div id="openMenu">
+          <img src="./images/icons/more.png" alt="" />
         </div>
 
-        <!-- Your custom back button -->
-      </div>
-    </div>
+        <!-- sidebar  -->
+        <div class="sidebar">
+          <div id="closeBar">
+            <img src="./images/icons/red-cross.png" alt="" />
+          </div>
+          <div class="buttons">
+            <!-- js code coming    -->
+          </div>
 
-    <script src="./js/video.js"></script>
-    <script src="./js/header.js"></script>
-  </body>
+        </div>
+      </div>
+
+      <!-- Your custom back button -->
+    </div>
+  </div>
+
+
+  <script src="./js/header.js"></script>
+  <script src="./js/fly.js"></script>
+  <script src="./js/video.js"></script>
+</body>
+
 </html>

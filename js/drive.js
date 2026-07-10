@@ -95,3 +95,15 @@ exploreAreaDrive.innerHTML = drives.map(drive => `
     </div>
   </div>
 `).join("");
+
+
+const container = document.querySelector(".sidebar .buttons");
+
+container.innerHTML = drives.map(({ city, flag, videoId, start }) => `
+    <button
+        class="walk"
+        data-video="${videoId}"
+        data-start="${start}">
+        ${city} ${flag}
+    </button>
+`).join("");

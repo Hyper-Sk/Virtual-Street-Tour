@@ -505,3 +505,15 @@ exploreAreaWalk.innerHTML = walks.map(walk => `
     </div>
   </div>
 `).join("");
+
+
+const container = document.querySelector(".sidebar .buttons");
+
+container.innerHTML = walks.map(({ city, flag, videoId, start }) => `
+    <button
+        class="walk"
+        data-video="${videoId}"
+        data-start="${start}">
+        ${city} ${flag}
+    </button>
+`).join("");
