@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <!-- Loader  -->
+  <?php include("./__loader.php") ?>
+
   <?php $isFly = true; ?>
   <!-- header  -->
   <?php include("./__header.php"); ?>

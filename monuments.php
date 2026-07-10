@@ -9,6 +9,10 @@
 </head>
 
 <body>
+
+<!-- Loader  -->
+<?php include("./__loader.php") ?>
+
   <?php $isMonuments = true; ?>
   <!-- header  -->
   <?php include "./__header.php" ?>
