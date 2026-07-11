@@ -10,14 +10,13 @@ const closeMenu = document.getElementById("closeBar");
 
 cityBoxes.forEach((box) => {
   box.addEventListener("click", () => {
-    console.log('first')
+    console.log('citybox clicked...')
     const videoId = box.dataset.video;
     const videoStart = box.dataset.start
     iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
-
     // iframe.src = `${videoId}`
     modal.style.display = "block";
-
+    
   });
 });
 
@@ -34,6 +33,7 @@ closeMenu.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
   iframe.src = ""; // stop video
   modal.style.display = "none";
+  sidebar.style.display = "none";
 });
 
 
