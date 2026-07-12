@@ -16,7 +16,7 @@ cityBoxes.forEach((box) => {
     iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
     // iframe.src = `${videoId}`
     modal.style.display = "block";
-    
+    // sidebar.style.display = "none";
   });
 });
 

@@ -92,7 +92,7 @@ const walks = [
   {
     city: "Chongqing (Night)",
     flag: "🇨🇳",
-    image: "chongqing.png",
+    image: "chongqing-night.png",
     alt: "Chongqing skyline, mountain city roads, bridges, and rivers in China",
     description:
       "Discover dramatic mountain roads, towering skyscrapers, scenic rivers, illuminated bridges, bustling streets, and Chongqing's unforgettable city views.",
@@ -201,7 +201,7 @@ const walks = [
   {
     city: "Jerusalem",
     flag: "🇵🇸",
-    image: "jerusalem.png",
+    image: "aqsa.png",
     alt: "Jerusalem walking tour through the Old City and historic landmarks",
     description:
       "Take a virtual walking tour through Jerusalem's ancient streets, Old City, bustling markets, historic landmarks, sacred sites, and centuries of rich cultural heritage.",
