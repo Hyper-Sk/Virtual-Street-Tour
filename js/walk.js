@@ -56,8 +56,8 @@ const walks = [
     alt: "Beijing street view virtual tour",
     description:
       "Explore imperial palaces, ancient temples, modern districts, cultural landmarks, and centuries of Chinese history.",
-    videoId: "J-ogDAu_xzI",
-    start: 105,
+    videoId: "2Mbg4E_JVaI",
+    start: 44,
   },
   {
     city: "Capri",
