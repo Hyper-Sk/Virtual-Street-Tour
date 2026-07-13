@@ -20,7 +20,7 @@
     <?php include("./__hero.php") ?>
 
     <!-- explore  -->
-    <div class="explore-area">
+    <div class="explore-area" id="godown">
       <!-- <h2>Explore Virtually Spend Time</h2> -->
       <div class="explore-area-content">
         <div class="explore-area__item">
