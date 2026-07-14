@@ -27,11 +27,15 @@
     </div>
   </div>
 
+  <!-- search  -->
+  <?php include "./__search.php" ?>
+
   <!-- explore  -->
   <div class="explore-area">
     <div class="explore-area-content">
       <!-- - js code coming - -->
     </div>
+    
   </div>
 
 
@@ -76,9 +80,8 @@
 
   <?php include "./__popup.php" ?>
 
-  <script src="./js/walk.js"></script>
-  <script src="./js/cities.js"></script>
   <script src="./js/header.js"></script>
+  <script src="./js/walk.js"></script>
   <script src="./js/video.js"></script>
 </body>
 

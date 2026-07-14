@@ -8,19 +8,20 @@ const openMenu = document.getElementById("openMenu");
 const sidebar = document.querySelector(".video-overlay .sidebar");
 const closeMenu = document.getElementById("closeBar");
 
-cityBoxes.forEach((box) => {
-  box.addEventListener("click", () => {
-    console.log('citybox clicked...')
-    const videoId = box.dataset.video;
-    const videoStart = box.dataset.start
-    iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
-    // iframe.src = `${videoId}`
-    modal.style.display = "block";
-    // sidebar.style.display = "none";
+
+
+function openVideo() {
+  cityBoxes.forEach((box) => {
+    box.addEventListener("click", () => {
+      console.log('citybox clicked...')
+      const videoId = box.dataset.video;
+      const videoStart = box.dataset.start
+      iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
+      modal.style.display = "block";
+    });
   });
-});
-
-
+}
+openVideo()
 
 openMenu.addEventListener("click", () => {
   sidebar.style.display = "flex";
@@ -37,6 +38,38 @@ backBtn.addEventListener("click", () => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // hide buttons 
 const buttons = [
   document.getElementById("openMenu"),
@@ -50,7 +83,7 @@ document.addEventListener("mousemove", () => {
   buttons.forEach(btn => btn.style.display = "flex");
   clearTimeout(hideTimer);
   hideTimer = setTimeout(() => {
-      buttons.forEach(btn => btn.style.display = "none");
+    buttons.forEach(btn => btn.style.display = "none");
   }, 3000);
 });
 
@@ -66,38 +99,38 @@ backBtn.addEventListener("click", () => {
   closeFullscreen();
 })
 function toggleFullscreen() {
-    if (!isFullscreen) {
-        openFullscreen();
-    } else {
-        closeFullscreen();
-    }
+  if (!isFullscreen) {
+    openFullscreen();
+  } else {
+    closeFullscreen();
+  }
 }
 
 function openFullscreen() {
-    if (viewer.requestFullscreen) {
-        viewer.requestFullscreen();
-    }
+  if (viewer.requestFullscreen) {
+    viewer.requestFullscreen();
+  }
 
-    history.pushState({ fullscreen: true }, "");
-    isFullscreen = true;
+  history.pushState({ fullscreen: true }, "");
+  isFullscreen = true;
 }
 
 function closeFullscreen() {
-    if (document.fullscreenElement) {
-        document.exitFullscreen();
-    }
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  }
 
-    isFullscreen = false;
+  isFullscreen = false;
 }
 
 window.addEventListener("fullscreenchange", () => {
-    isFullscreen = !!document.fullscreenElement;
+  isFullscreen = !!document.fullscreenElement;
 });
 
 window.addEventListener("popstate", () => {
-    if (document.fullscreenElement) {
-        document.exitFullscreen();
-    }
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  }
 });
 
 

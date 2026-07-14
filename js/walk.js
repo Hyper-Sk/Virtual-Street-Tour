@@ -2,6 +2,7 @@ const walks = [
   {
     city: "Amsterdam",
     flag: "🇳🇱",
+    country:"netherlands",
     image: "amsterdam.png",
     alt: "Amsterdam city canals and historic streets in Netherlands",
     description:
@@ -12,6 +13,7 @@ const walks = [
   {
     city: "Abu Dhabi",
     flag: "🇦🇪",
+    country:"united arab emirates",
     image: "abu-dhabi.png",
     alt: "Abu Dhabi street view virtual tour",
     description:
@@ -22,6 +24,7 @@ const walks = [
   {
     city: "Bangkok",
     flag: "🇹🇭",
+    country:"thailand",
     image: "bangkok.png",
     alt: "Bangkok street view virtual tour",
     description:
@@ -32,6 +35,7 @@ const walks = [
   {
     city: "Barcelona",
     flag: "🇪🇸",
+    country:"spain",
     image: "barcelona.png",
     alt: "Barcelona colorful streets and architecture in Spain",
     description:
@@ -42,6 +46,7 @@ const walks = [
   {
     city: "Berlin",
     flag: "🇩🇪",
+    country:"germany",
     image: "berlin.png",
     alt: "Berlin street view virtual tour",
     description:
@@ -52,6 +57,7 @@ const walks = [
   {
     city: "Beijing",
     flag: "🇨🇳",
+    country:"china",
     image: "beijing.png",
     alt: "Beijing street view virtual tour",
     description:
@@ -62,6 +68,7 @@ const walks = [
   {
     city: "Capri",
     flag: "🇮🇹",
+    country:"",
     image: "capri.png",
     alt: "Capri street view virtual tour",
     description:
@@ -72,6 +79,7 @@ const walks = [
   {
     city: "Cairo",
     flag: "🇪🇬",
+    country:"",
     image: "cairo-city.png",
     alt: "Cairo street view virtual tour",
     description:
@@ -82,6 +90,7 @@ const walks = [
   {
     city: "Chongqing",
     flag: "🇨🇳",
+    country:"",
     image: "chongqing.png",
     alt: "Chongqing skyline, mountain city roads, bridges, and rivers in China",
     description:
@@ -92,6 +101,7 @@ const walks = [
   {
     city: "Chongqing (Night)",
     flag: "🇨🇳",
+    country:"",
     image: "chongqing-night.png",
     alt: "Chongqing skyline, mountain city roads, bridges, and rivers in China",
     description:
@@ -102,15 +112,17 @@ const walks = [
   {
     city: "Chicago",
     flag: "🇺🇸",
+    country:"",
     image: "chicago.png",
     alt: "Chicago walking tour through downtown streets and famous landmarks",
     description: "Take a virtual walking tour through Chicago's downtown streets, Millennium Park, Riverwalk, Magnificent Mile, historic architecture, and vibrant city neighborhoods.",
     videoId: "MMxZcqdt76c",
     start: 83
-},
+  },
   {
     city: "Doha",
     flag: "🇶🇦",
+    country:"",
     image: "doha.png",
     alt: "Doha walking tour through streets, Corniche, and Souq Waqif",
     description:
@@ -121,6 +133,7 @@ const walks = [
   {
     city: "Dubai",
     flag: "🇦🇪",
+    country:"",
     image: "dubai.png",
     alt: "Dubai vitual walking tour",
     description:
@@ -131,6 +144,7 @@ const walks = [
   {
     city: "Damascus",
     flag: "🇸🇾",
+    country:"",
     image: "damascus.png",
     alt: "Damascus street view virtual tour",
     description:
@@ -141,6 +155,7 @@ const walks = [
   {
     city: "Grindelwald",
     flag: "🇨🇭",
+    country:"",
     image: "grindelwald.png",
     alt: "Switzerland street view virtual tour",
     description:
@@ -151,6 +166,7 @@ const walks = [
   {
     city: "Golconda Fort",
     flag: "🇮🇳",
+    country:"",
     image: "golconda-fort.png",
     alt: "Golconda Fort virtual tour",
     description:
@@ -161,6 +177,7 @@ const walks = [
   {
     city: "Hong Kong",
     flag: "🇭🇰",
+    country:"",
     image: "hong-kong.png",
     alt: "Hong Kong street view virtual tour",
     description:
@@ -171,6 +188,7 @@ const walks = [
   {
     city: "Helsinki",
     flag: "🇫🇮",
+    country:"",
     image: "helsinki.png",
     alt: "Helsinki street view virtual tour",
     description:
@@ -181,6 +199,7 @@ const walks = [
   {
     city: "Hanoi",
     flag: "🇻🇳",
+    country:"",
     image: "ho-chi-minh-city.png",
     alt: "Ho Chi Minh City street view virtual tour",
     description:
@@ -191,6 +210,7 @@ const walks = [
   {
     city: "Istanbul",
     flag: "🇹🇷",
+    country:"",
     image: "istanbul.png",
     alt: "Istanbul historic streets and skyline in Turkey",
     description:
@@ -201,6 +221,7 @@ const walks = [
   {
     city: "Jerusalem",
     flag: "🇵🇸",
+    country:"",
     image: "aqsa.png",
     alt: "Jerusalem walking tour through the Old City and historic landmarks",
     description:
@@ -211,6 +232,7 @@ const walks = [
   {
     city: "Jakarta",
     flag: "🇮🇩",
+    country:"",
     image: "jakarta.png",
     alt: "Jakarta street view virtual tour",
     description:
@@ -221,6 +243,7 @@ const walks = [
   {
     city: "Kuala Lumpur",
     flag: "🇲🇾",
+    country:"",
     image: "kuala-lumpur.png",
     alt: "Kuala Lumpur street view virtual tour",
     description:
@@ -231,6 +254,7 @@ const walks = [
   {
     city: "Lauterbrunnen",
     flag: "🇨🇭",
+    country:"",
     image: "lauterbrunnen.png",
     alt: "Lauterbrunnen Switzerland virtual tour",
     description:
@@ -241,6 +265,7 @@ const walks = [
   {
     city: "Los Angeles",
     flag: "🇺🇸",
+    country:"",
     image: "los-angeles.png",
     alt: "Los Angeles street view virtual tour",
     description:
@@ -251,6 +276,7 @@ const walks = [
   {
     city: "London",
     flag: "🇬🇧",
+    country:"",
     image: "london.png",
     alt: "London city streets and famous landmarks in United Kingdom",
     description:
@@ -261,6 +287,7 @@ const walks = [
   {
     city: "Mykonos",
     flag: "🇬🇷",
+    country:"",
     image: "mykonos.png",
     alt: "Mykonos street view virtual tour",
     description:
@@ -271,6 +298,7 @@ const walks = [
   {
     city: "Muscat",
     flag: "🇴🇲",
+    country:"",
     image: "muscat.png",
     alt: "Muscat walking tour through historic streets and waterfront",
     description:
@@ -281,6 +309,7 @@ const walks = [
   {
     city: "Manhattan (Times Square)",
     flag: "🇺🇸",
+    country:"",
     image: "time-square.png",
     alt: "Times Square New York street view virtual tour",
     description:
@@ -291,6 +320,7 @@ const walks = [
   {
     city: "Mumbai",
     flag: "🇮🇳",
+    country:"",
     image: "mumbai.png",
     alt: "Mumbai street view virtual tour",
     description:
@@ -301,15 +331,17 @@ const walks = [
   {
     city: "Maldives",
     flag: "🇲🇻",
+    country:"",
     image: "maldives.png",
     alt: "Maldives walking tour through tropical islands and beachfront paths",
     description: "Take a virtual walking tour through the Maldives' tropical islands, white-sand beaches, crystal-clear waters, peaceful resorts, palm-lined paths, and stunning ocean views.",
     videoId: "LlVznIMJglc",
     start: 126
-},
+  },
   {
     city: "Melbourne",
     flag: "🇦🇺",
+    country:"",
     image: "melbourne.png",
     alt: "Melbourne street view virtual tour",
     description:
@@ -320,6 +352,7 @@ const walks = [
   {
     city: "Mexico City",
     flag: "🇲🇽",
+    country:"",
     image: "mexico-city.png",
     alt: "Mexico City street view virtual tour",
     description:
@@ -330,6 +363,7 @@ const walks = [
   {
     city: "Montreal",
     flag: "🇨🇦",
+    country:"",
     image: "montreal.png",
     alt: "Montreal street view virtual tour",
     description:
@@ -340,6 +374,7 @@ const walks = [
   {
     city: "Milan",
     flag: "🇮🇹",
+    country:"",
     image: "milan.png",
     alt: "Milan street view virtual tour",
     description:
@@ -350,6 +385,7 @@ const walks = [
   {
     city: "Moscow",
     flag: "🇷🇺",
+    country:"",
     image: "moscow.png",
     alt: "Moscow street view virtual tour",
     description:
@@ -360,6 +396,7 @@ const walks = [
   {
     city: "New York City",
     flag: "🇺🇸",
+    country:"",
     image: "new-york.png",
     alt: "New York City skyline and busy streets in USA",
     description:
@@ -370,6 +407,7 @@ const walks = [
   {
     city: "New Delhi",
     flag: "🇮🇳",
+    country:"",
     image: "new-delhi.png",
     alt: "New Delhi street view virtual tour",
     description:
@@ -381,6 +419,7 @@ const walks = [
   {
     city: "Naples",
     flag: "🇮🇹",
+    country:"",
     image: "naples.png",
     alt: "Naples street view virtual tour",
     description:
@@ -391,6 +430,7 @@ const walks = [
   {
     city: "Osaka",
     flag: "🇯🇵",
+    country:"",
     image: "osaka.png",
     alt: "Osaka street view virtual tour",
     description:
@@ -401,6 +441,7 @@ const walks = [
   {
     city: "Paris",
     flag: "🇫🇷",
+    country:"",
     image: "paris.png",
     alt: "Paris streets cafes and landmarks in France",
     description:
@@ -411,6 +452,7 @@ const walks = [
   {
     city: "Positano",
     flag: "🇮🇹",
+    country:"",
     image: "positano.png",
     alt: "Positano walking tour through colorful cliffside streets and coastal views",
     description:
@@ -421,6 +463,7 @@ const walks = [
   {
     city: "Lahore",
     flag: "🇵🇰",
+    country:"",
     image: "lahore.png",
     alt: "Lahore walking tour through historic streets and famous landmarks",
     description:
@@ -431,6 +474,7 @@ const walks = [
   {
     city: "Prague",
     flag: "🇨🇿",
+    country:"",
     image: "prague.png",
     alt: "Prague street view virtual tour",
     description:
@@ -441,6 +485,7 @@ const walks = [
   {
     city: "Riyadh (Night)",
     flag: "🇸🇦",
+    country:"",
     image: "riyad.png",
     alt: "Riyadh street view virtual tour",
     description:
@@ -451,6 +496,7 @@ const walks = [
   {
     city: "Rome",
     flag: "🇮🇹",
+    country:"",
     image: "rome.png",
     alt: "Rome ancient landmarks and historic streets in Italy",
     description:
@@ -461,6 +507,7 @@ const walks = [
   {
     city: "Stockholm",
     flag: "🇸🇪",
+    country:"",
     image: "stockholm.png",
     alt: "Sweden street view virtual tour",
     description:
@@ -471,6 +518,7 @@ const walks = [
   {
     city: "Santorini",
     flag: "🇬🇷",
+    country:"",
     image: "santorini.png",
     alt: "Santorini walking tour through whitewashed streets and coastal villages",
     description:
@@ -482,6 +530,7 @@ const walks = [
   {
     city: "San Francisco",
     flag: "🇺🇸",
+    country:"",
     image: "california.png",
     alt: "California scenic road trip and street view virtual tour",
     description:
@@ -493,6 +542,7 @@ const walks = [
   {
     city: "Singapore",
     flag: "🇸🇬",
+    country:"",
     image: "singapore.png",
     alt: "Singapore modern city streets and skyline",
     description:
@@ -504,6 +554,7 @@ const walks = [
   {
     city: "Seoul",
     flag: "🇰🇷",
+    country:"",
     image: "seoul.png",
     alt: "Seoul street view virtual tour",
     description:
@@ -515,6 +566,7 @@ const walks = [
   {
     city: "Sydney",
     flag: "🇦🇺",
+    country:"",
     image: "sydney.png",
     alt: "Sydney street view virtual tour",
     description:
@@ -525,6 +577,7 @@ const walks = [
   {
     city: "Shanghai",
     flag: "🇨🇳",
+    country:"",
     image: "shanghai-day.png",
     alt: "Shanghai street view virtual tour",
     description:
@@ -535,6 +588,7 @@ const walks = [
   {
     city: "Shanghai (Night)",
     flag: "🇨🇳",
+    country:"",
     image: "shanghai-night.png",
     alt: "Shanghai street view virtual tour",
     description:
@@ -546,6 +600,7 @@ const walks = [
   {
     city: "Tokyo",
     flag: "🇯🇵",
+    country:"",
     image: "tokyo.png",
     alt: "Tokyo modern skyline and busy streets in Japan",
     description:
@@ -556,6 +611,7 @@ const walks = [
   {
     city: "Tehran",
     flag: "🇮🇷",
+    country:"",
     image: "tehran.png",
     alt: "Tehran street view virtual tour",
     description:
@@ -566,6 +622,7 @@ const walks = [
   {
     city: "Toronto",
     flag: "🇨🇦",
+    country:"",
     image: "toronto.png",
     alt: "Toronto street view virtual tour",
     description:
@@ -577,6 +634,7 @@ const walks = [
   {
     city: "Venice",
     flag: "🇮🇹",
+    country:"",
     image: "venice.png",
     alt: "Venice street view virtual tour",
     description:
@@ -588,6 +646,7 @@ const walks = [
   {
     city: "Vancouver",
     flag: "🇨🇦",
+    country:"",
     image: "vancouver.png",
     alt: "Vancouver street view virtual tour",
     description:
@@ -598,48 +657,199 @@ const walks = [
   {
     city: "Valletta",
     flag: "🇲🇹",
+    country:"",
     image: "valletta.png",
     alt: "Valletta walking tour through historic streets and Baroque landmarks",
     description: "Take a virtual walking tour through Valletta's historic streets, Baroque architecture, grand squares, ancient fortifications, charming cafés, and stunning Mediterranean views.",
     videoId: "MTkX0_htW-I",
     start: 64
-},
+  },
 ];
 
+
+
 const exploreAreaWalk = document.querySelector(".explore-area-content");
+const search = document.querySelector(".search input");
 
-exploreAreaWalk.innerHTML = walks
-  .map(
-    (walk) => `
-  <div class="explore-area__item">
-    <div class="thumbnail">
-      <img
-        class="bg-img"
-        src="./images/cities/${walk.image}"
-        alt="${walk.alt}"
-      />
-    </div>
+console.log(walks.length)
+// Array currently being displayed
+let filteredWalks = [...walks];
 
-    <div class="text">
-      <h3>${walk.flag} ${walk.city}</h3>
+function renderCards() {
+    // No results
+    if (filteredWalks.length === 0) {
+        exploreAreaWalk.innerHTML = `
+            <h3 class="no-result">No destinations found.</h3>
+        `;
+        return;
+    }
 
-      <p>
-        ${walk.description}
-      </p>
+    exploreAreaWalk.innerHTML = filteredWalks.map(walk => `
+            <div class="explore-area__item">
+                <div class="thumbnail">
+                    <img
+                        class="bg-img"
+                        src="./images/cities/${walk.image}"
+                        alt="${walk.alt}"
+                    />
+                </div>
 
-      <a
-        data-video="${walk.videoId}"
-        data-start="${walk.start}"
-        class="btn walk"
-      >
-        Begin Journey
-      </a>
-    </div>
-  </div>
-`,
-  )
-  .join("");
+                <div class="text">
+                    <h3>${walk.flag} ${walk.city}</h3>
 
+                    <p>${walk.description}</p>
+
+                    <a
+                        data-video="${walk.videoId}"
+                        data-start="${walk.start}"
+                        class="btn walk"
+                    >
+                        Begin Journey
+                    </a>
+                </div>
+            </div>
+        `)
+        .join("");
+}
+
+
+
+// Search
+search.addEventListener("input", () => {
+
+    const keyword = search.value.trim().toLowerCase();
+
+    filteredWalks = walks.filter(walk =>
+        walk.city.toLowerCase().includes(keyword) ||
+        walk.country.toLowerCase().includes(keyword)
+    );
+
+    // Reset to first 10 results
+
+    renderCards();
+
+});
+
+// Initial render
+renderCards();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // city cards 
+// const exploreAreaWalk = document.querySelector(".explore-area-content");
+// const loadMoreBtn = document.querySelector(".loadmore");
+
+// const perLoad = 10;
+// let visibleItems = perLoad;
+
+// function renderCards() {
+//   exploreAreaWalk.innerHTML = walks
+//     .slice(0, visibleItems)
+//     .map((walk) => `
+//       <div class="explore-area__item">
+//         <div class="thumbnail">
+//           <img
+//             class="bg-img"
+//             src="./images/cities/${walk.image}"
+//             alt="${walk.alt}"
+//           />
+//         </div>
+
+//         <div class="text">
+//           <h3>${walk.flag} ${walk.city}</h3>
+
+//           <p>${walk.description}</p>
+
+//           <a
+//             data-video="${walk.videoId}"
+//             data-start="${walk.start}"
+//             class="btn walk"
+//           >
+//             Begin Journey
+//           </a>
+//         </div>
+//       </div>
+//     `)
+//     .join("");
+
+
+//   // Hide button if all cards are shown
+//   loadMoreBtn.style.display =
+//     visibleItems >= walks.length ? "none" : "flex";
+// }
+// loadMoreBtn.addEventListener("click", () => {
+//   visibleItems += perLoad;
+//   renderCards();
+// });
+// renderCards();
+
+
+// const search = document.querySelector(".search input");
+// // console.log('first')
+// let filteredWalks = [...walks];
+// search.addEventListener("input", () => {
+//     const keyword = search.value.trim().toLowerCase();
+//     filteredWalks = walks.filter(walk =>
+//         walk.city.toLowerCase().includes(keyword) ||
+//         walk.country.toLowerCase().includes(keyword)
+//     );
+//     visibleItems = perLoad;
+//     renderCards();
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// sidebar buttons 
 const container = document.querySelector(".sidebar .buttons");
 
 container.innerHTML = walks
@@ -649,8 +859,7 @@ container.innerHTML = walks
         class="walk"
         data-video="${videoId}"
         data-start="${start}">
-        ${city} ${flag}
-    </button>
+        ${city} ${flag} </button>
 `,
   )
   .join("");
