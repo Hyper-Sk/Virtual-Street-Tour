@@ -259,24 +259,20 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 50vh;
+    height: 60vh;
   }
 
   .hero-content {
     padding: 60px 30px;
-    text-align: left;
-    align-items: start;
-    justify-content: center;
+    text-align: center;
   }
 
   .hero-content h1 {
-    font-size: 45px;
+    font-size: 50px;
     line-height: 50px;
   }
 
-  .hero-content .icon {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 576px) {}
