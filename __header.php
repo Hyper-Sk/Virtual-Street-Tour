@@ -26,7 +26,7 @@
 
       <div class="header-mobile">
         <div class="logo">
-            <a href="./">Virtual Street Tour 📍</a>
+            <a href="./">Virtual Vacation Tour 📍</a>
         </div>
         <div class="open">
             <i class="uil uil-bars"></i>

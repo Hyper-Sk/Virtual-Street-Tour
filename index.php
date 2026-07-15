@@ -5,7 +5,7 @@
 
   <?php include("./_head.php") ?>
 
-  <title>Virtual Walking Tour</title>
+  <title>Virtual Street Tour - Explore Famous Cities & Landmarks from Home</title>
 
   <meta 
   name="description" 
@@ -146,7 +146,7 @@
   <?php include("./__footer.php") ?>
 
   <!-- popup  -->
-  <?php include("./__popup.php") ?>
+  <?php //include("./__popup.php") ?>
 
   <script src="./js/header.js"></script>
 
