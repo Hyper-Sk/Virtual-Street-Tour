@@ -180,7 +180,7 @@
 }
 
 .hero .overlay {
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
   left: 0;
@@ -202,7 +202,6 @@
   text-align: center;
   border-radius: 15px;
   z-index: 12;
-  padding-top: 20px;
 }
 
 
@@ -326,12 +325,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.explore-area .loadmore{
+.explore-area .loadmorebtn{
   padding-top: 40px;
   display: flex;
   justify-self: center;
 }
-.explore-area .loadmore p {
+.explore-area .loadmorebtn button {
   background: #00d2fc;
   background: linear-gradient(195deg,
       rgb(109, 0, 252) 1%,
@@ -340,8 +339,12 @@
   padding: 15px 50px;
   border-radius: 10px;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
-
+.explore-area .loadmorebtn button:hover{
+  transform: scale(1.05);
+}
 .explore-area-content {
   max-width: 1400px;
   margin-inline: auto;
@@ -466,9 +469,41 @@
 
 
 
+/* request ***************************  */
 
+.request {
+  padding: 80px 20px;
+  background: #00d2fc;
+  background: linear-gradient(195deg,
+      rgb(109, 0, 252) 1%,
+      rgba(0, 117, 234, 1) 99%);
+  color: #fff;
+  text-align: center;
+}
 
+.request-content {
+  max-width: 650px;
+  margin: auto;
+}
 
+.request h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.request p {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.request a {
+  padding: 15px 35px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #191919;
+  font-size: 15px;
+}
 
 
 

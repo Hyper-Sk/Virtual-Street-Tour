@@ -11,14 +11,35 @@ const closeMenu = document.getElementById("closeBar");
 
 
 function openVideo() {
-  cityBoxes.forEach((box) => {
-    box.addEventListener("click", () => {
-      console.log('citybox clicked...')
-      const videoId = box.dataset.video;
-      const videoStart = box.dataset.start
-      iframe.src = `https://www.youtube.com/embed/${videoId}?cc_load_policy=0&cc_lang_pref=en&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1&start=${videoStart}`;
-      modal.style.display = "block";
+  cityBoxes.forEach(() => {
+    const container = document.querySelector(".explore-area-content");
+    const sidebarButtons = document.querySelector(".sidebar .buttons");
+    // console.log(container, sidebarButtons)
+
+    container.addEventListener("click", (e) => {
+        const btn = e.target.closest(".walk");
+        if (!btn) return;
+    
+        e.preventDefault();
+    
+        const videoId = btn.dataset.video;
+        const start = btn.dataset.start;
+    
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&start=${start}`;
+        modal.style.display = "block";
     });
+
+    sidebarButtons.addEventListener("click", (e) => {
+        const btn = e.target.closest(".walk");
+        if (!btn) return;
+        e.preventDefault();
+        const videoId = btn.dataset.video;
+        const start = btn.dataset.start;
+    
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&start=${start}`;
+        modal.style.display = "block";
+    });
+
   });
 }
 openVideo()
@@ -36,39 +57,6 @@ backBtn.addEventListener("click", () => {
   modal.style.display = "none";
   sidebar.style.display = "none";
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // hide buttons 
 const buttons = [

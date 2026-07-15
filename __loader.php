@@ -1,11 +1,12 @@
 <div class="loader-container">
-    <p class="loading-text">✨ Adventure is just a moment away...</p>
     <div class="loader">
-    </div>
+        </div>
+        <p class="loading-text">✨ Adventure is just a moment away...</p>
 </div>
 
 <script>
     const loadingMessages = [
+        "🌎 Almost ready... Enjoy your adventure!",
         "🌍 Preparing your virtual journey...",
         "🚶 Loading famous city streets...",
         "🏛️ Finding iconic landmarks...",
@@ -13,7 +14,6 @@
         "✈️ Taking you around the world...",
         "🌆 Loading breathtaking destinations...",
         "🎥 Preparing real-world travel videos...",
-        "🌎 Almost ready... Enjoy your adventure!"
     ];
 
     const loadingText = document.querySelector(".loading-text");
@@ -22,7 +22,8 @@
     setInterval(() => {
         loadingText.textContent = loadingMessages[i];
         i = (i + 1) % loadingMessages.length;
-    }, 3000);
+    }, 1500);
+
     window.addEventListener("load", () => {
         document.querySelector(".loader-container")?.classList.add("hide");
     });

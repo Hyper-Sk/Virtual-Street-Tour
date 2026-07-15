@@ -50,6 +50,9 @@ p {
   line-height: 20px;
   letter-spacing: 0.5px;
 }
+button{
+  font-size: 15px;
+}
 
 @media screen and (max-width: 576px) {
   p {
@@ -160,41 +163,30 @@ div.waves {
 }
 
 
-
+/* HTML: <div class="loader"></div> */
 .loader {
-  --color-1: rgba(255, 255, 255, 0.15);
-  --color-2: #fff;
-  --size: 1px;
-  width: 200px;
-  height: calc(4 * var(--size));
-  display: inline-block;
-  position: relative;
-  background: var(--color-1);
-  overflow: hidden;
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  animation:
+    l20-1 0.8s infinite linear alternate,
+    l20-2 1.6s infinite linear;
 }
-
-.loader::after {
-  content: '';
-  width: calc(192 * var(--size));
-  height: calc(4.8 * var(--size));
-  background: var(--color-2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  animation: animloader 2s linear infinite;
+@keyframes l20-1{
+   0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+   12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+   25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+   50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+   100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
 }
-
-@keyframes animloader {
-  0% {
-    left: 0;
-    transform: translateX(-100%);
-  }
-
-  100% {
-    left: 100%;
-    transform: translateX(0%);
-  }
+@keyframes l20-2{ 
+  0%    {transform:scaleY(1)  rotate(0deg)}
+  49.99%{transform:scaleY(1)  rotate(135deg)}
+  50%   {transform:scaleY(-1) rotate(0deg)}
+  100%  {transform:scaleY(-1) rotate(-135deg)}
 }
 
 
@@ -206,28 +198,3 @@ div.waves {
 
 
 
-.skeleton {
-  height: 200px;
-  background-color: gray;
-}
-
-
-.skeleton::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -150px;
-  height: 100%;
-  width: 150px;
-  background: linear-gradient(90deg,
-      transparent,
-      rgba(255, 255, 255, 0.6),
-      transparent);
-  animation: shimmer 1.3s infinite;
-}
-
-@keyframes shimmer {
-  100% {
-    transform: translateX(350px);
-  }
-}

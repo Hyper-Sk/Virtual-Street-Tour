@@ -667,24 +667,29 @@ const walks = [
 ];
 
 
-
 const exploreAreaWalk = document.querySelector(".explore-area-content");
 const search = document.querySelector(".search input");
+const loadMoreBtn = document.querySelector(".loadmorebtn");
 
-console.log(walks.length)
+const CARDS_PER_LOAD = 12;
+let visibleCards = CARDS_PER_LOAD;
+
 // Array currently being displayed
 let filteredWalks = [...walks];
 
 function renderCards() {
-    // No results
+
     if (filteredWalks.length === 0) {
         exploreAreaWalk.innerHTML = `
             <h3 class="no-result">No destinations found.</h3>
         `;
+        loadMoreBtn.style.display = "none";
         return;
     }
 
-    exploreAreaWalk.innerHTML = filteredWalks.map(walk => `
+    exploreAreaWalk.innerHTML = filteredWalks
+        .slice(0, visibleCards)
+        .map(walk => `
             <div class="explore-area__item">
                 <div class="thumbnail">
                     <img
@@ -710,9 +715,11 @@ function renderCards() {
             </div>
         `)
         .join("");
+
+    // Show/Hide Load More button
+    loadMoreBtn.style.display =
+        visibleCards >= filteredWalks.length ? "none" : "flex";
 }
-
-
 
 // Search
 search.addEventListener("input", () => {
@@ -724,14 +731,26 @@ search.addEventListener("input", () => {
         walk.country.toLowerCase().includes(keyword)
     );
 
-    // Reset to first 10 results
+    // Reset to first 12 cards after searching
+    visibleCards = CARDS_PER_LOAD;
 
     renderCards();
 
 });
 
+// Load More
+loadMoreBtn.addEventListener("click", () => {
+    visibleCards += CARDS_PER_LOAD;
+    renderCards();
+});
+
 // Initial render
 renderCards();
+
+
+console.log("walks:", walks.length);
+console.log("filteredWalks:", filteredWalks.length);
+console.log("visibleCards:", visibleCards);
 
 
 

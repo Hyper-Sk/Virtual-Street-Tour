@@ -35,7 +35,9 @@
     <div class="explore-area-content">
       <!-- - js code coming - -->
     </div>
-    
+    <div class="loadmorebtn">
+      <button>Load More...</button>
+    </div>
   </div>
 
 

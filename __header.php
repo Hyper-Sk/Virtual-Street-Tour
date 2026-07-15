@@ -1,7 +1,7 @@
 <header class="header">
       <div class="header-content">
         <div class="logo">
-          <a href="./" class="text">Virtual Street Tour 📍</a>
+          <a href="./" class="text">Virtual Vacation Tour 📍</a>
           <!-- <img src="./images/logo-2.png" alt="" /> -->
         </div>
         <div class="menu">

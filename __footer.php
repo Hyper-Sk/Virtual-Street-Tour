@@ -2,7 +2,7 @@
       <div class="footer-content">
         <div class="logo">
           <div class="text">
-            Virtual Street Tour 📍 
+            Virtual Vacation Tour 📍 
           </div>
           <p>
             Virtual Street Tour lets you explore cities, landmarks, and hidden gems around the world through immersive street-level experiences. Discover new destinations, plan your travels, and enjoy virtual journeys from anywhere, anytime.
@@ -36,5 +36,5 @@
       </div>
     </footer>
       <div class="copyright">
-        <p>All Right Reserved © Vitual Street Tour</p>
+        <p>All Right Reserved © Vitual Vacation Tour</p>
     </div>
