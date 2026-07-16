@@ -18,19 +18,19 @@
         </div>
         <div class="about">
           <h3>About</h3>
-          <a href="./"><i class="uil uil-user"></i> About</a>
-          <a href="./"><i class="uil uil-bullseye"></i> Our Mission</a>
-          <a href="./"><i class="uil uil-info-circle"></i> Terms</a>
-          <a href="./"><i class="uil uil-shield"></i> Privacy</a>
+          <a href="./about.php"><i class="uil uil-user"></i> About</a>
+          <a href="./mission.php"><i class="uil uil-bullseye"></i> Our Mission</a>
+          <a href="./terms.php"><i class="uil uil-info-circle"></i> Terms</a>
+          <a href="./privacy"><i class="uil uil-shield"></i> Privacy</a>
         </div>
         <div class="social">
           <h3>Social</h3>
-          <a href="./"><i class="uil uil-facebook-f"></i> FaceBook</a>
-          <a href="./"><i class="uil uil-instagram"></i> Instagram</a>
+          <a href="./facebook.com"><i class="uil uil-facebook-f"></i> FaceBook</a>
+          <a href="./instagram.com"><i class="uil uil-instagram"></i> Instagram</a>
         </div>
         <div class="contact">
           <h3>Contact</h3>
-          <a href="./"><i class="uil uil-envelope"></i> example@gmail.com</a>
+          <a href="mailto:example@gmail.com"><i class="uil uil-envelope"></i> example@gmail.com</a>
         </div>
      
       </div>

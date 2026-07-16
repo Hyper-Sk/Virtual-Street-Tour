@@ -139,8 +139,14 @@
     </div>
   </div>
 
-   <!-- hero  -->
+   <!-- request section  -->
+   <?php include("./__home-about.php") ?>
+
+   <!-- request section  -->
    <?php include("./__request.php") ?>
+
+   <!-- faqs section  -->
+   <?php include("./__FAQs.php") ?>
 
   <!-- footer  -->
   <?php include("./__footer.php") ?>

@@ -2,597 +2,594 @@ const walks = [
   {
     city: "Amsterdam",
     flag: "🇳🇱",
-    country:"netherlands",
+    country: "Netherlands",
+    credit: "",
     image: "amsterdam.png",
     alt: "Amsterdam city canals and historic streets in Netherlands",
-    description:
-      "Famous for scenic canals, cycling culture, historic architecture, vibrant neighborhoods, museums, and charming streets full of character.",
+    description: "Scenic canals, cycling culture, historic architecture, museums, charming neighborhoods, vibrant atmosphere.",
     videoId: "uL6z9v7Cf9Y",
     start: 180,
   },
   {
     city: "Abu Dhabi",
     flag: "🇦🇪",
-    country:"united arab emirates",
+    country: "United Arab Emirates",
+    credit: "",
     image: "abu-dhabi.png",
     alt: "Abu Dhabi street view virtual tour",
-    description:
-      "Discover grand mosques, waterfront promenades, modern architecture, luxury attractions, and rich Emirati culture throughout the city.",
+    description: "Grand mosques, waterfront promenades, luxury attractions, modern architecture, rich Emirati culture.",
     videoId: "cFaGGCdNNZ8",
     start: 275,
   },
   {
     city: "Bangkok",
     flag: "🇹🇭",
-    country:"thailand",
+    country: "Thailand",
+    credit: "",
     image: "bangkok.png",
     alt: "Bangkok street view virtual tour",
-    description:
-      "Experience lively street markets, ornate temples, bustling neighborhoods, delicious cuisine, riverfront attractions, and nightlife.",
+    description: "Bustling markets, ornate temples, vibrant nightlife, delicious cuisine, scenic riverfront attractions.",
     videoId: "L_6HtFWVV6o",
     start: 200,
   },
   {
     city: "Barcelona",
     flag: "🇪🇸",
-    country:"spain",
+    country: "Spain",
+    credit: "",
     image: "barcelona.png",
     alt: "Barcelona colorful streets and architecture in Spain",
-    description:
-      "Admire unique architecture, lively avenues, Mediterranean atmosphere, artistic landmarks, and vibrant local culture.",
+    description: "Unique architecture, Mediterranean charm, artistic landmarks, lively avenues, vibrant local culture.",
     videoId: "Z8SuL0R8dGI",
     start: 163,
   },
   {
     city: "Berlin",
     flag: "🇩🇪",
-    country:"germany",
+    country: "Germany",
+    credit: "",
     image: "berlin.png",
     alt: "Berlin street view virtual tour",
-    description:
-      "Explore historic landmarks, modern architecture, artistic districts, vibrant nightlife, cultural diversity, and fascinating history.",
+    description: "Historic landmarks, artistic districts, modern architecture, vibrant nightlife, diverse cultural experiences.",
     videoId: "1qitNAzhxQk",
     start: 10,
   },
   {
     city: "Beijing",
     flag: "🇨🇳",
-    country:"china",
+    country: "China",
+    credit: "",
     image: "beijing.png",
     alt: "Beijing street view virtual tour",
-    description:
-      "Explore imperial palaces, ancient temples, modern districts, cultural landmarks, and centuries of Chinese history.",
+    description: "Imperial palaces, ancient temples, cultural landmarks, modern districts, centuries of history.",
     videoId: "2Mbg4E_JVaI",
     start: 44,
   },
   {
     city: "Capri",
     flag: "🇮🇹",
-    country:"",
+    country: "Italy",
+    credit: "",
     image: "capri.png",
     alt: "Capri street view virtual tour",
-    description:
-      "Discover dramatic cliffs, luxury boutiques, scenic coastal paths, colorful streets, crystal-clear waters, and stunning Mediterranean views.",
+    description: "Dramatic cliffs, crystal waters, luxury boutiques, scenic paths, Mediterranean beauty awaits.",
     videoId: "oCAuYL7akFQ",
     start: 180,
   },
   {
     city: "Cairo",
     flag: "🇪🇬",
-    country:"",
+    country: "Egypt",
+    credit: "",
     image: "cairo-city.png",
     alt: "Cairo street view virtual tour",
-    description:
-      "Explore ancient wonders, bustling markets, historic mosques, vibrant streets, rich Egyptian culture, and iconic pyramid views.",
+    description: "Ancient pyramids, historic mosques, bustling markets, vibrant streets, Egyptian cultural heritage.",
     videoId: "2mGAKmK2zTk",
     start: 171,
   },
   {
     city: "Chongqing",
     flag: "🇨🇳",
-    country:"",
+    country: "China",
+    credit: "",
     image: "chongqing.png",
     alt: "Chongqing skyline, mountain city roads, bridges, and rivers in China",
-    description:
-      "Discover dramatic mountain roads, towering skyscrapers, scenic rivers, illuminated bridges, bustling streets, and Chongqing's unforgettable city views.",
+    description: "Mountain skyline, illuminated bridges, rivers, skyscrapers, unforgettable urban landscapes, vibrant streets.",
     videoId: "JvzjeE4pNjo",
     start: 426,
   },
   {
     city: "Chongqing (Night)",
     flag: "🇨🇳",
-    country:"",
+    country: "China",
+    credit: "",
     image: "chongqing-night.png",
     alt: "Chongqing skyline, mountain city roads, bridges, and rivers in China",
-    description:
-      "Discover dramatic mountain roads, towering skyscrapers, scenic rivers, illuminated bridges, bustling streets, and Chongqing's unforgettable city views.",
+    description: "Glowing skyline, illuminated bridges, mountain roads, rivers, spectacular nighttime city views.",
     videoId: "V5uDKBCLNkw",
     start: 268,
   },
   {
     city: "Chicago",
     flag: "🇺🇸",
-    country:"",
+    country: "United States",
+    credit: "",
     image: "chicago.png",
     alt: "Chicago walking tour through downtown streets and famous landmarks",
-    description: "Take a virtual walking tour through Chicago's downtown streets, Millennium Park, Riverwalk, Magnificent Mile, historic architecture, and vibrant city neighborhoods.",
+    description: "Downtown skyline, Riverwalk, Millennium Park, historic architecture, vibrant city neighborhoods.",
     videoId: "MMxZcqdt76c",
-    start: 83
+    start: 83,
   },
   {
     city: "Doha",
     flag: "🇶🇦",
-    country:"",
+    country: "Qatar",
+    credit: "",
     image: "doha.png",
     alt: "Doha walking tour through streets, Corniche, and Souq Waqif",
-    description:
-      "Take a virtual walking tour through Doha's modern skyline, scenic Corniche, Souq Waqif, luxury shopping districts, and vibrant streets while exploring Qatar's rich culture.",
+    description: "Modern skyline, Corniche, Souq Waqif, luxury shopping, authentic Qatari cultural experiences.",
     videoId: "PBsWxlyreXY",
     start: 8,
   },
   {
     city: "Dubai",
     flag: "🇦🇪",
-    country:"",
+    country: "United Arab Emirates",
+    credit: "",
     image: "dubai.png",
-    alt: "Dubai vitual walking tour",
-    description:
-      "Marvel at futuristic architecture, luxury developments, desert surroundings, waterfront districts, and extraordinary cityscapes.",
+    alt: "Dubai virtual walking tour",
+    description: "Futuristic skyline, luxury attractions, desert landscapes, waterfront districts, iconic architecture.",
     videoId: "I9XB1gHvF74",
     start: 275,
   },
   {
     city: "Damascus",
     flag: "🇸🇾",
-    country:"",
+    country: "Syria",
+    credit: "",
     image: "damascus.png",
     alt: "Damascus street view virtual tour",
-    description:
-      "Explore one of the world's oldest cities, featuring historic souks, ancient architecture, and rich cultural heritage.",
+    description: "Ancient streets, historic souks, beautiful architecture, rich culture, timeless heritage, unforgettable.",
     videoId: "GxI1q6a0r9Y",
     start: 21,
   },
   {
     city: "Grindelwald",
     flag: "🇨🇭",
-    country:"",
+    country: "Switzerland",
+    credit: "",
     image: "grindelwald.png",
     alt: "Switzerland street view virtual tour",
-    description:
-      "Discover breathtaking alpine landscapes, charming villages, crystal-clear lakes, scenic mountain roads, historic towns, and stunning natural beauty.",
+    description: "Snowy mountains, alpine villages, scenic trails, breathtaking landscapes, peaceful Swiss nature.",
     videoId: "Q0kEnjBcvDc",
     start: 120,
   },
   {
     city: "Golconda Fort",
     flag: "🇮🇳",
-    country:"",
+    country: "India",
+    credit: "",
     image: "golconda-fort.png",
     alt: "Golconda Fort virtual tour",
-    description:
-      "Walk through historic fortifications, royal palaces, scenic viewpoints, fascinating history, and impressive stone architecture.",
+    description: "Historic fort, royal palaces, stone architecture, panoramic views, fascinating Indian history.",
     videoId: "Ok7p1aAKux8",
     start: 94,
   },
   {
     city: "Hong Kong",
     flag: "🇭🇰",
-    country:"",
+    country: "Hong Kong",
+    credit: "",
     image: "hong-kong.png",
     alt: "Hong Kong street view virtual tour",
-    description:
-      "Admire dramatic skylines, busy markets, harbor views, modern architecture, mountain scenery, and vibrant urban life.",
+    description: "Modern skyline, busy markets, harbor views, vibrant streets, stunning urban scenery.",
     videoId: "PaJAm6NI9Qc",
     start: 20,
   },
   {
     city: "Helsinki",
     flag: "🇫🇮",
-    country:"",
+    country: "Finland",
+    credit: "",
     image: "helsinki.png",
     alt: "Helsinki street view virtual tour",
-    description:
-      "Experience Nordic architecture, seaside landscapes, design districts, peaceful parks, cultural attractions, and modern living.",
+    description: "Nordic architecture, seaside beauty, peaceful parks, cultural attractions, modern Finnish lifestyle.",
     videoId: "g5PmuZWgA88",
     start: 10,
   },
   {
     city: "Hanoi",
     flag: "🇻🇳",
-    country:"",
+    country: "Vietnam",
+    credit: "",
     image: "ho-chi-minh-city.png",
-    alt: "Ho Chi Minh City street view virtual tour",
-    description:
-      "Experience bustling streets, colonial architecture, vibrant markets, modern development, delicious cuisine, and energetic city life.",
+    alt: "Hanoi street view virtual tour",
+    description: "Historic streets, colonial buildings, vibrant markets, delicious cuisine, lively Vietnamese culture.",
     videoId: "xId3cHWsta4",
     start: 227,
   },
   {
     city: "Istanbul",
     flag: "🇹🇷",
-    country:"",
+    country: "Turkey",
+    credit: "",
     image: "istanbul.png",
     alt: "Istanbul historic streets and skyline in Turkey",
-    description:
-      "Experience a fascinating blend of Europe and Asia through markets, mosques, palaces, and waterfront streets.",
+    description: "Historic mosques, bustling markets, waterfront views, rich culture, unforgettable city experiences.",
     videoId: "jSwhjaRho0c",
     start: 5,
   },
   {
     city: "Jerusalem",
     flag: "🇵🇸",
-    country:"",
+    country: "Palestine",
+    credit: "",
     image: "aqsa.png",
     alt: "Jerusalem walking tour through the Old City and historic landmarks",
-    description:
-      "Take a virtual walking tour through Jerusalem's ancient streets, Old City, bustling markets, historic landmarks, sacred sites, and centuries of rich cultural heritage.",
+    description: "Ancient streets, sacred landmarks, historic markets, rich heritage, unforgettable spiritual destination.",
     videoId: "g7VCU8nv2U0",
     start: 460,
   },
   {
     city: "Jakarta",
     flag: "🇮🇩",
-    country:"",
+    country: "Indonesia",
+    credit: "",
     image: "jakarta.png",
     alt: "Jakarta street view virtual tour",
-    description:
-      "Discover bustling neighborhoods, cultural attractions, historic sites, modern developments, and Indonesia's dynamic capital city.",
+    description: "Bustling streets, cultural landmarks, modern skyline, vibrant neighborhoods, dynamic Indonesian capital.",
     videoId: "hNkdZFzzvBg",
     start: 12,
   },
   {
     city: "Kuala Lumpur",
     flag: "🇲🇾",
-    country:"",
+    country: "Malaysia",
+    credit: "",
     image: "kuala-lumpur.png",
     alt: "Kuala Lumpur street view virtual tour",
-    description:
-      "Experience iconic skyscrapers, multicultural neighborhoods, vibrant markets, modern attractions, and rich Malaysian culture.",
+    description: "Iconic skyscrapers, vibrant markets, multicultural neighborhoods, modern attractions, Malaysian culture.",
     videoId: "sLwhC92mF2k",
     start: 46,
   },
   {
     city: "Lauterbrunnen",
     flag: "🇨🇭",
-    country:"",
+    country: "Switzerland",
+    credit: "",
     image: "lauterbrunnen.png",
     alt: "Lauterbrunnen Switzerland virtual tour",
-    description:
-      "Explore a stunning alpine valley surrounded by towering cliffs, waterfalls, charming chalets, scenic trails, and breathtaking mountain views.",
+    description: "Towering waterfalls, alpine valley, scenic trails, charming chalets, breathtaking mountain landscapes await.",
     videoId: "ZFZkXXf7QLc",
     start: 90,
   },
   {
     city: "Los Angeles",
     flag: "🇺🇸",
-    country:"",
+    country: "United States",
+    credit: "",
     image: "los-angeles.png",
     alt: "Los Angeles street view virtual tour",
-    description:
-      "Explore famous boulevards, palm-lined streets, iconic landmarks, beautiful beaches, entertainment districts, and Southern California culture.",
+    description: "Hollywood landmarks, palm streets, sandy beaches, entertainment districts, vibrant California lifestyle.",
     videoId: "VINOSu5y4ic",
     start: 48,
   },
   {
     city: "London",
     flag: "🇬🇧",
-    country:"",
+    country: "United Kingdom",
+    credit: "",
     image: "london.png",
     alt: "London city streets and famous landmarks in United Kingdom",
-    description:
-      "Explore royal landmarks, historic streets, diverse neighborhoods, world-class museums, vibrant markets, and modern attractions.",
+    description: "Royal landmarks, historic streets, iconic museums, vibrant markets, unforgettable British culture.",
     videoId: "yttFUAUdDf4",
     start: 115,
   },
   {
     city: "Mykonos",
     flag: "🇬🇷",
-    country:"",
+    country: "Greece",
+    credit: "",
     image: "mykonos.png",
     alt: "Mykonos street view virtual tour",
-    description:
-      "Explore whitewashed streets, charming windmills, stunning beaches, picturesque alleys, vibrant nightlife, and breathtaking Aegean Sea views.",
+    description: "Whitewashed streets, beautiful beaches, charming windmills, vibrant nightlife, stunning Aegean scenery.",
     videoId: "41FOuEwTJEQ",
     start: 1692,
   },
   {
     city: "Muscat",
     flag: "🇴🇲",
-    country:"",
+    country: "Oman",
+    credit: "",
     image: "muscat.png",
     alt: "Muscat walking tour through historic streets and waterfront",
-    description:
-      "Take a virtual walking tour through Muscat's peaceful streets, Muttrah Souq, scenic Corniche, historic forts, beautiful mosques, and stunning coastal views.",
+    description: "Historic forts, scenic Corniche, peaceful streets, beautiful mosques, authentic Omani culture.",
     videoId: "mIHUcmkSxNM",
     start: 156,
   },
   {
     city: "Manhattan (Times Square)",
     flag: "🇺🇸",
-    country:"",
+    country: "United States",
+    credit: "",
     image: "time-square.png",
     alt: "Times Square New York street view virtual tour",
-    description:
-      "Experience dazzling billboards, bustling crowds, iconic theaters, vibrant nightlife, famous attractions, and New York energy.",
+    description: "Bright billboards, bustling crowds, famous theaters, vibrant nightlife, iconic New York energy.",
     videoId: "dJm43N7E_pA",
     start: 2,
   },
   {
     city: "Mumbai",
     flag: "🇮🇳",
-    country:"",
+    country: "India",
+    credit: "",
     image: "mumbai.png",
     alt: "Mumbai street view virtual tour",
-    description:
-      "Discover bustling streets, colonial architecture, coastal views, vibrant markets, diverse culture, and dynamic city life.",
+    description: "Bustling streets, coastal views, vibrant markets, colonial architecture, dynamic Indian metropolis.",
     videoId: "5GwI8sUcEp8",
     start: 44,
   },
   {
     city: "Maldives",
     flag: "🇲🇻",
-    country:"",
+    country: "Maldives",
+    credit: "",
     image: "maldives.png",
     alt: "Maldives walking tour through tropical islands and beachfront paths",
-    description: "Take a virtual walking tour through the Maldives' tropical islands, white-sand beaches, crystal-clear waters, peaceful resorts, palm-lined paths, and stunning ocean views.",
+    description: "Crystal waters, tropical islands, white beaches, luxury resorts, peaceful ocean paradise.",
     videoId: "LlVznIMJglc",
-    start: 126
+    start: 126,
   },
   {
     city: "Melbourne",
     flag: "🇦🇺",
-    country:"",
+    country: "Australia",
+    credit: "",
     image: "melbourne.png",
     alt: "Melbourne street view virtual tour",
-    description:
-      "Explore artistic laneways, cultural attractions, trendy cafés, beautiful parks, sporting venues, and creative energy.",
+    description: "Artistic laneways, trendy cafés, beautiful parks, cultural attractions, creative city atmosphere.",
     videoId: "Prz2VJOdtEE",
     start: 40,
   },
   {
     city: "Mexico City",
     flag: "🇲🇽",
-    country:"",
+    country: "Mexico",
+    credit: "",
     image: "mexico-city.png",
     alt: "Mexico City street view virtual tour",
-    description:
-      "Discover historic plazas, colorful neighborhoods, cultural landmarks, vibrant markets, world-class museums, and lively urban streets.",
+    description: "Historic plazas, colorful neighborhoods, vibrant markets, cultural landmarks, lively urban experiences.",
     videoId: "fVh9YNTzhak",
     start: 230,
   },
   {
     city: "Montreal",
     flag: "🇨🇦",
-    country:"",
+    country: "Canada",
+    credit: "",
     image: "montreal.png",
     alt: "Montreal street view virtual tour",
-    description:
-      "Wander charming streets, historic districts, cultural festivals, beautiful architecture, and vibrant French-Canadian heritage.",
+    description: "Historic districts, charming streets, vibrant festivals, beautiful architecture, French-Canadian culture.",
     videoId: "UHuQ1jc_hB4",
     start: 331,
   },
   {
     city: "Milan",
     flag: "🇮🇹",
-    country:"",
+    country: "Italy",
+    credit: "",
     image: "milan.png",
     alt: "Milan street view virtual tour",
-    description:
-      "Discover elegant boulevards, fashion districts, historic cathedrals, modern design, and vibrant Italian culture.",
+    description: "Fashion capital, historic cathedrals, elegant boulevards, modern design, Italian culture thrives.",
     videoId: "8FCkb7NZ7SI",
     start: 65,
   },
   {
     city: "Moscow",
     flag: "🇷🇺",
-    country:"",
+    country: "Russia",
+    credit: "",
     image: "moscow.png",
     alt: "Moscow street view virtual tour",
-    description:
-      "Discover grand avenues, historic landmarks, iconic architecture, cultural treasures, vibrant squares, and rich Russian heritage.",
+    description: "Grand avenues, iconic architecture, historic landmarks, vibrant squares, rich Russian heritage.",
     videoId: "CLfVNSqaoV4",
     start: 110,
   },
   {
     city: "New York City",
     flag: "🇺🇸",
-    country:"",
+    country: "United States",
+    credit: "",
     image: "new-york.png",
     alt: "New York City skyline and busy streets in USA",
-    description:
-      "Walk through iconic avenues, towering skyscrapers, cultural districts, famous parks, and energetic urban landscapes.",
+    description: "Iconic skyscrapers, Central Park, bustling avenues, vibrant neighborhoods, unforgettable city experiences.",
     videoId: "27Pv4Cg4EV4",
     start: 800,
   },
   {
     city: "New Delhi",
     flag: "🇮🇳",
-    country:"",
+    country: "India",
+    credit: "",
     image: "new-delhi.png",
     alt: "New Delhi street view virtual tour",
-    description:
-      "Experience historic monuments, government landmarks, vibrant markets, cultural diversity, wide avenues, and modern development.",
+    description: "Historic monuments, vibrant markets, government buildings, diverse culture, modern city life.",
     videoId: "IiW8181-Dbo",
     start: 28,
   },
-
   {
     city: "Naples",
     flag: "🇮🇹",
-    country:"",
+    country: "Italy",
+    credit: "",
     image: "naples.png",
     alt: "Naples street view virtual tour",
-    description:
-      "Explore historic streets, coastal scenery, ancient heritage, authentic cuisine, and lively local culture.",
+    description: "Historic streets, coastal scenery, authentic cuisine, ancient heritage, vibrant Italian culture.",
     videoId: "NON14NgRTC4",
     start: 81,
   },
   {
     city: "Osaka",
     flag: "🇯🇵",
-    country:"",
+    country: "Japan",
+    credit: "",
     image: "osaka.png",
     alt: "Osaka street view virtual tour",
-    description:
-      "Explore energetic streets, delicious food districts, modern attractions, historic landmarks, and welcoming local culture.",
+    description: "Bustling streets, delicious cuisine, historic landmarks, modern attractions, welcoming Japanese culture.",
     videoId: "xP-wJbQcMOc",
     start: 220,
   },
   {
     city: "Paris",
     flag: "🇫🇷",
-    country:"",
+    country: "France",
+    credit: "",
     image: "paris.png",
     alt: "Paris streets cafes and landmarks in France",
-    description:
-      "Discover elegant boulevards, iconic landmarks, romantic cafes, historic neighborhoods, artistic heritage, and timeless beauty.",
+    description: "Iconic landmarks, elegant boulevards, charming cafés, artistic heritage, timeless Parisian beauty.",
     videoId: "oz1Mgu8e1N4",
     start: 132,
   },
   {
     city: "Positano",
     flag: "🇮🇹",
-    country:"",
+    country: "Italy",
+    credit: "",
     image: "positano.png",
     alt: "Positano walking tour through colorful cliffside streets and coastal views",
-    description:
-      "Take a virtual walking tour through Positano's colorful streets, scenic stairways, charming cafés, boutique shops, beautiful beaches, and breathtaking Amalfi Coast views.",
+    description: "Colorful streets, cliffside views, charming cafés, beautiful beaches, breathtaking Amalfi Coast.",
     videoId: "IhyzXSk5mGs",
     start: 80,
   },
   {
     city: "Lahore",
     flag: "🇵🇰",
-    country:"",
+    country: "Pakistan",
+    credit: "",
     image: "lahore.png",
     alt: "Lahore walking tour through historic streets and famous landmarks",
-    description:
-      "Take a virtual walking tour through Lahore's vibrant streets, historic Old City, bustling bazaars, Mughal architecture, local markets, and rich cultural heritage.",
+    description: "Historic bazaars, Mughal architecture, vibrant streets, rich culture, unforgettable heritage experiences.",
     videoId: "1BbuDMz2h3k",
     start: 151,
   },
   {
     city: "Prague",
     flag: "🇨🇿",
-    country:"",
+    country: "Czech Republic",
+    credit: "",
     image: "prague.png",
     alt: "Prague street view virtual tour",
-    description:
-      "Wander medieval streets, historic bridges, charming squares, Gothic architecture, and one of Europe’s most beautiful cities.",
+    description: "Medieval streets, Gothic architecture, historic bridges, charming squares, unforgettable European beauty.",
     videoId: "VZrcZLJ0HUM",
     start: 84,
   },
   {
     city: "Riyadh (Night)",
     flag: "🇸🇦",
-    country:"",
+    country: "Saudi Arabia",
+    credit: "",
     image: "riyad.png",
     alt: "Riyadh street view virtual tour",
-    description:
-      "Discover modern skyscrapers, historic landmarks, bustling boulevards, cultural attractions, desert surroundings, and Saudi Arabia's vibrant capital.",
+    description: "Modern skyscrapers, illuminated streets, cultural landmarks, vibrant nightlife, Saudi capital shines.",
     videoId: "UYhEAeRisuo",
     start: 8,
   },
   {
     city: "Rome",
     flag: "🇮🇹",
-    country:"",
+    country: "Italy",
+    credit: "",
     image: "rome.png",
     alt: "Rome ancient landmarks and historic streets in Italy",
-    description:
-      "Journey through ancient ruins, historic plazas, grand architecture, charming streets, and centuries of heritage.",
+    description: "Ancient ruins, historic plazas, grand architecture, charming streets, timeless Roman heritage.",
     videoId: "uOJkVLwnCNI",
     start: 303,
   },
   {
     city: "Stockholm",
     flag: "🇸🇪",
-    country:"",
+    country: "Sweden",
+    credit: "",
     image: "stockholm.png",
     alt: "Sweden street view virtual tour",
-    description:
-      "Explore charming old towns, scenic waterfronts, modern architecture, beautiful forests, vibrant cities, and stunning Nordic landscapes.",
+    description: "Historic waterfronts, charming old town, Nordic beauty, vibrant culture, scenic landscapes.",
     videoId: "Ehi1Mz6ZVDc",
     start: 47,
   },
   {
     city: "Santorini",
     flag: "🇬🇷",
-    country:"",
+    country: "Greece",
+    credit: "",
     image: "santorini.png",
     alt: "Santorini walking tour through whitewashed streets and coastal villages",
-    description:
-      "Take a virtual walking tour through Santorini's charming villages, whitewashed streets, blue-domed churches, scenic cliffside paths, and breathtaking Aegean Sea views.",
+    description: "Whitewashed villages, blue domes, cliffside paths, breathtaking views, Aegean island paradise.",
     videoId: "TKNK0c1zfVo",
     start: 113,
   },
-
   {
     city: "San Francisco",
     flag: "🇺🇸",
-    country:"",
+    country: "United States",
+    credit: "",
     image: "california.png",
     alt: "California scenic road trip and street view virtual tour",
-    description:
-      "Discover stunning coastlines, vibrant cities, scenic highways, iconic landmarks, beautiful beaches, and diverse landscapes.",
+    description: "Golden Gate Bridge, scenic coastlines, rolling hills, vibrant neighborhoods, iconic landmarks.",
     videoId: "vdihtkpKoNc",
     start: 373,
   },
-
   {
     city: "Singapore",
     flag: "🇸🇬",
-    country:"",
+    country: "Singapore",
+    credit: "",
     image: "singapore.png",
     alt: "Singapore modern city streets and skyline",
-    description:
-      "Enjoy spotless streets, futuristic gardens, multicultural districts, impressive architecture, and a stunning waterfront skyline.",
+    description: "Futuristic skyline, spotless streets, waterfront gardens, multicultural districts, modern city experiences.",
     videoId: "3MFlpVe93XU",
     start: 57,
   },
-
   {
     city: "Seoul",
     flag: "🇰🇷",
-    country:"",
+    country: "South Korea",
+    credit: "",
     image: "seoul.png",
     alt: "Seoul street view virtual tour",
-    description:
-      "Enjoy futuristic skylines, traditional palaces, lively markets, trendy neighborhoods, technology hubs, and vibrant nightlife.",
+    description: "Traditional palaces, futuristic skyline, lively markets, trendy districts, vibrant Korean culture.",
     videoId: "unY9hqu9bEk",
     start: 10,
   },
-
   {
     city: "Sydney",
     flag: "🇦🇺",
-    country:"",
+    country: "Australia",
+    credit: "",
     image: "sydney.png",
     alt: "Sydney street view virtual tour",
-    description:
-      "Enjoy famous harbor views, beautiful beaches, iconic architecture, coastal walks, and vibrant urban experiences.",
+    description: "Harbor views, iconic Opera House, beautiful beaches, coastal walks, vibrant Australian lifestyle.",
     videoId: "MJQ6ZyBNtCk",
     start: 200,
   },
   {
     city: "Shanghai",
     flag: "🇨🇳",
-    country:"",
+    country: "China",
+    credit: "",
     image: "shanghai-day.png",
     alt: "Shanghai street view virtual tour",
-    description:
-      "Admire futuristic skylines, waterfront boulevards, modern architecture, luxury districts, and vibrant metropolitan energy.",
+    description: "Modern skyline, waterfront boulevard, luxury districts, vibrant streets, futuristic city atmosphere.",
     videoId: "euvrgJKqrNc",
     start: 117,
   },
   {
     city: "Shanghai (Night)",
     flag: "🇨🇳",
-    country:"",
+    country: "China",
+    credit: "",
     image: "shanghai-night.png",
     alt: "Shanghai street view virtual tour",
-    description:
-      "Admire futuristic skylines, waterfront boulevards, modern architecture, luxury districts, and vibrant metropolitan energy.",
+    description: "Glowing skyline, illuminated waterfront, modern architecture, vibrant nightlife, unforgettable city views.",
     videoId: "AVPThQc_z_4",
     start: 181,
   },
@@ -600,69 +597,68 @@ const walks = [
   {
     city: "Tokyo",
     flag: "🇯🇵",
-    country:"",
+    country: "Japan",
+    credit: "",
     image: "tokyo.png",
     alt: "Tokyo modern skyline and busy streets in Japan",
-    description:
-      "Experience futuristic skyscrapers, neon districts, traditional temples, bustling crossings, unique culture, and endless urban exploration.",
+    description: "Neon streets, futuristic skyline, historic temples, bustling crossings, vibrant Japanese culture.",
     videoId: "28ZjrtD_iL0",
     start: 380,
   },
   {
     city: "Tehran",
     flag: "🇮🇷",
-    country:"",
+    country: "Iran",
+    credit: "",
     image: "tehran.png",
     alt: "Tehran street view virtual tour",
-    description:
-      "Experience bustling avenues, mountain views, cultural museums, historic palaces, modern districts, and vibrant local life.",
+    description: "Mountain views, bustling avenues, historic palaces, cultural museums, vibrant Persian city.",
     videoId: "wfmPGNfzm8g",
     start: 358,
   },
   {
     city: "Toronto",
     flag: "🇨🇦",
-    country:"",
+    country: "Canada",
+    credit: "",
     image: "toronto.png",
     alt: "Toronto street view virtual tour",
-    description:
-      "Experience iconic skylines, waterfront attractions, multicultural neighborhoods, bustling streets, and dynamic city life.",
+    description: "Iconic skyline, waterfront attractions, multicultural neighborhoods, vibrant streets, Canadian metropolis.",
     videoId: "Ex5_d0NyWO8",
     start: 247,
   },
-
   {
     city: "Venice",
     flag: "🇮🇹",
-    country:"",
+    country: "Italy",
+    credit: "",
     image: "venice.png",
     alt: "Venice street view virtual tour",
-    description:
-      "Wander through picturesque canals, charming bridges, historic architecture, hidden alleys, and unforgettable waterfront scenery.",
+    description: "Historic canals, charming bridges, beautiful architecture, romantic streets, timeless Italian destination.",
     videoId: "2BfHMnDOteA",
     start: 303,
   },
-
   {
     city: "Vancouver",
     flag: "🇨🇦",
-    country:"",
+    country: "Canada",
+    credit: "",
     image: "vancouver.png",
     alt: "Vancouver street view virtual tour",
-    description:
-      "Enjoy stunning mountain views, waterfront scenery, modern districts, green spaces, and outdoor adventures.",
+    description: "Mountain views, scenic waterfront, green parks, modern skyline, outdoor adventure paradise.",
     videoId: "n_nye25KIZg",
     start: 112,
   },
   {
     city: "Valletta",
     flag: "🇲🇹",
-    country:"",
+    country: "Malta",
+    credit: "",
     image: "valletta.png",
     alt: "Valletta walking tour through historic streets and Baroque landmarks",
-    description: "Take a virtual walking tour through Valletta's historic streets, Baroque architecture, grand squares, ancient fortifications, charming cafés, and stunning Mediterranean views.",
+    description: "Historic streets, Baroque architecture, grand squares, ancient fortifications, Mediterranean coastal beauty.",
     videoId: "MTkX0_htW-I",
-    start: 64
+    start: 64,
   },
 ];
 
@@ -679,17 +675,17 @@ let filteredWalks = [...walks];
 
 function renderCards() {
 
-    if (filteredWalks.length === 0) {
-        exploreAreaWalk.innerHTML = `
+  if (filteredWalks.length === 0) {
+    exploreAreaWalk.innerHTML = `
             <h3 class="no-result">No destinations found.</h3>
         `;
-        loadMoreBtn.style.display = "none";
-        return;
-    }
+    loadMoreBtn.style.display = "none";
+    return;
+  }
 
-    exploreAreaWalk.innerHTML = filteredWalks
-        .slice(0, visibleCards)
-        .map(walk => `
+  exploreAreaWalk.innerHTML = filteredWalks
+    .slice(0, visibleCards)
+    .map(walk => `
             <div class="explore-area__item">
                 <div class="thumbnail">
                     <img
@@ -714,34 +710,34 @@ function renderCards() {
                 </div>
             </div>
         `)
-        .join("");
+    .join("");
 
-    // Show/Hide Load More button
-    loadMoreBtn.style.display =
-        visibleCards >= filteredWalks.length ? "none" : "flex";
+  // Show/Hide Load More button
+  loadMoreBtn.style.display =
+    visibleCards >= filteredWalks.length ? "none" : "flex";
 }
 
 // Search
 search.addEventListener("input", () => {
 
-    const keyword = search.value.trim().toLowerCase();
+  const keyword = search.value.trim().toLowerCase();
 
-    filteredWalks = walks.filter(walk =>
-        walk.city.toLowerCase().includes(keyword) ||
-        walk.country.toLowerCase().includes(keyword)
-    );
+  filteredWalks = walks.filter(walk =>
+    walk.city.toLowerCase().includes(keyword) ||
+    walk.country.toLowerCase().includes(keyword)
+  );
 
-    // Reset to first 12 cards after searching
-    visibleCards = CARDS_PER_LOAD;
+  // Reset to first 12 cards after searching
+  visibleCards = CARDS_PER_LOAD;
 
-    renderCards();
+  renderCards();
 
 });
 
 // Load More
 loadMoreBtn.addEventListener("click", () => {
-    visibleCards += CARDS_PER_LOAD;
-    renderCards();
+  visibleCards += CARDS_PER_LOAD;
+  renderCards();
 });
 
 // Initial render
