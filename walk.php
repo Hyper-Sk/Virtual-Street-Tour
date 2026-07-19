@@ -7,9 +7,7 @@
   <title>Walking Street Tour</title>
 
   <style>
-    .explore-area {
-      padding: 20px 20px 60px 20px;
-    }
+    
   </style>
 </head>
 

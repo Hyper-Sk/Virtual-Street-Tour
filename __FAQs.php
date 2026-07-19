@@ -1,7 +1,7 @@
 <section class="faq" id="faq">
     <div class="faq-content">
 
-        <h2>Frequently Asked Questions</h2>
+        <h2>Frequently Asked Questions ❓</h2>
         <p>
             Find answers to common questions about Virtual Vacation Tour, virtual walking tours,
             scenic drives, and exploring famous destinations from home.

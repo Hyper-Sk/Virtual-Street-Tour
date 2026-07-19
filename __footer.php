@@ -36,5 +36,5 @@
       </div>
     </footer>
       <div class="copyright">
-        <p>All Right Reserved © Vitual Vacation Tour</p>
+        <p>All Rights Reserved © Vitual Vacation Tour</p>
     </div>

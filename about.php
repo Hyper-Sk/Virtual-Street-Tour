@@ -8,7 +8,7 @@
 
     <style>
         .breadcrumb {
-            padding: 80px 20px 20px;
+            padding: 60px 20px 20px;
         }
 
         .blog {
@@ -40,11 +40,12 @@
 </head>
 
 <body>
+    <?php $isAbout =  true; ?>
+
     <!-- Loader  -->
     <?php include("./__loader.php") ?>
 
 
-    <?php $isLive = true; ?>
     <!-- header  -->
     <?php include("./__header.php"); ?>
 

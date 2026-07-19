@@ -13,10 +13,10 @@
 </head>
 
 <body>
-   <!-- Loader  -->
-   <?php include("./__loader.php") ?>
+  <!-- Loader  -->
+  <?php include("./__loader.php") ?>
 
-   
+
   <?php $isDrive = true; ?>
 
   <?php include "./__header.php" ?>
@@ -31,18 +31,22 @@
     </div>
   </div>
 
+  <!-- search  -->
+  <?php include "./__search.php" ?>
 
   <!-- explore  -->
   <div class="explore-area">
     <div class="explore-area-content">
-     <!-- itirating through loop  -->
+      <!-- - js code coming - -->
+    </div>
+    <div class="loadmorebtn">
+      <button>Load More...</button>
     </div>
   </div>
 
-
   <?php include("./__footer.php"); ?>
 
-  
+
   <!-- Fullscreen Video Modal -->
   <div id="videoModal">
     <div class="video-wrapper">
@@ -55,7 +59,7 @@
         </button>
 
         <!-- full screen btn  -->
-        <div id="fullscreenBtn" onclick="openFullscreen()" >
+        <div id="fullscreenBtn" onclick="openFullscreen()">
           <img src="./images/icons/fullscreen.png" alt="">
         </div>
 
@@ -80,7 +84,7 @@
     </div>
   </div>
 
-  
+
   <script src="./js/header.js"></script>
   <script src="./js/drive.js"></script>
   <script src="./js/video.js"></script>

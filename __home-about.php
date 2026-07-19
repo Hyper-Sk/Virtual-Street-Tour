@@ -1,7 +1,7 @@
 <section class="home-about" id="about">
     <div class="home-about-content">
 
-        <h2>About Virtual Vacation Tour</h2>
+        <h2>About Virtual Vacation Tour 📍</h2>
 
         <p>
             Welcome to <strong>Virtual Vacation Tour</strong>, your destination for exploring the

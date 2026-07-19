@@ -7,6 +7,8 @@
 
   </head>
   <body>
+    <?php $isLive =  true; ?>
+
     <!-- Loader  -->
     <?php include("./__loader.php") ?>
 

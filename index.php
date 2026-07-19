@@ -7,10 +7,15 @@
 
   <title>Virtual Street Tour - Explore Famous Cities & Landmarks from Home</title>
 
-  <meta 
-  name="description" 
-  content="Explore the world from home with Virtual Walking Tour. Walk through famous cities, drive scenic roads, visit iconic landmarks, and enjoy immersive virtual travel experiences."
-  >
+  <meta
+    name="description"
+    content="Explore the world from home with Virtual Walking Tour. Walk through famous cities, drive scenic roads, visit iconic landmarks, and enjoy immersive virtual travel experiences.">
+
+  <style>
+    .explore-area {
+      padding: 20px 20px 20px 20px;
+    }
+  </style>
 
 </head>
 
@@ -98,11 +103,11 @@
             alt="Virtual market tour through colorful bazaars, local markets, shopping streets, and street food" />
         </div>
         <div class="text">
-          <h3>Market Tours 🍜</h3>
+          <h3>Market, Food & Indoor Tours 🍜</h3>
           <p>
             Walk through colorful markets, traditional bazaars, and lively shopping streets virtually worldwide.
           </p>
-          <a class="btn">Coming Soon</a>
+          <a href="./market.php" class="btn">Explore</a>
         </div>
       </div>
 
@@ -117,7 +122,7 @@
           <p>
             Visit 100+ countries, famous landmarks, and hidden gems without leaving home.
           </p>
-          <a href="./countries.php" class="btn">Coming Soon</a>
+          <a class="btn">Coming Soon</a>
         </div>
       </div>
 
@@ -132,27 +137,28 @@
           <p>
             Watch real-world travel videos featuring cities, landmarks, nature, worldwide live.
           </p>
-          <a href="./live.php" class="btn">Coming Soon</a>
+          <a  class="btn">Coming Soon</a>
         </div>
       </div>
 
     </div>
   </div>
 
-   <!-- request section  -->
-   <?php include("./__home-about.php") ?>
+  <!-- request section  -->
+  <?php include("./__home-about.php") ?>
 
-   <!-- request section  -->
-   <?php include("./__request.php") ?>
+  <!-- request section  -->
+  <?php include("./__request.php") ?>
 
-   <!-- faqs section  -->
-   <?php include("./__FAQs.php") ?>
+  <!-- faqs section  -->
+  <?php include("./__FAQs.php") ?>
 
   <!-- footer  -->
   <?php include("./__footer.php") ?>
 
   <!-- popup  -->
-  <?php //include("./__popup.php") ?>
+  <?php //include("./__popup.php") 
+  ?>
 
   <script src="./js/header.js"></script>
 

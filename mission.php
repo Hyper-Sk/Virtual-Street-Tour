@@ -7,8 +7,8 @@
     <?php include("./_head.php"); ?>
 
     <style>
-         .breadcrumb {
-            padding: 80px 20px 20px;
+          .breadcrumb {
+            padding: 60px 20px 20px;
         }
         .blog {
             padding: 0px 20px 80px;
@@ -39,11 +39,13 @@
 </head>
 
 <body>
+    <?php $isMission =  true; ?>
+
     <!-- Loader  -->
     <?php include("./__loader.php") ?>
 
 
-    <?php $isLive = true; ?>
+  
     <!-- header  -->
     <?php include("./__header.php"); ?>
 

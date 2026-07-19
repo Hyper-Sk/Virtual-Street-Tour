@@ -26,34 +26,32 @@
     </div>
   </div>
 
+  <!-- search  -->
+  <?php include "./__search.php" ?>
+
   <!-- explore  -->
   <div class="explore-area">
     <div class="explore-area-content">
-        <!-- js code coming  -->
+      <!-- - js code coming - -->
+    </div>
+    <div class="loadmorebtn">
+      <button>Load More...</button>
     </div>
   </div>
-
-  <!-- footer  -->
-  <?php include("./__footer.php"); ?>
-
-
-
-
 
   <!-- Fullscreen Video Modal -->
   <div id="videoModal">
     <div class="video-wrapper">
       <iframe id="youtubeFrame" allow="autoplay" allowfullscreen> </iframe>
       <div class="video-overlay">
-
         <!-- close or go back button  -->
         <button id="backBtn">
           <img src="./images/icons/left-chevron.png" alt="" />
         </button>
 
         <!-- full screen btn  -->
-        <div id="fullscreenBtn" onclick="openFullscreen()" >
-          <img src="./images/icons/fullscreen.png" alt="">
+        <div id="fullscreenBtn" onclick="openFullscreen()">
+          <img src="./images/icons/fullscreen.png" alt="" />
         </div>
 
         <!-- open sidebar btn  -->
@@ -69,13 +67,20 @@
           <div class="buttons">
             <!-- js code coming    -->
           </div>
-
         </div>
       </div>
 
       <!-- Your custom back button -->
     </div>
   </div>
+
+
+
+  <!-- footer  -->
+  <?php include("./__footer.php"); ?>
+
+
+
 
 
   <script src="./js/header.js"></script>

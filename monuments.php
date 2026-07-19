@@ -26,13 +26,16 @@
     </div>
   </div>
 
+   <!-- search  -->
+  <?php include "./__search.php" ?>
+
   <!-- explore  -->
   <div class="explore-area">
     <div class="explore-area-content">
-
-
-     
-
+      <!-- - js code coming - -->
+    </div>
+    <div class="loadmorebtn">
+      <button>Load More...</button>
     </div>
   </div>
 
@@ -78,9 +81,9 @@
     </div>
   </div>
 
+  <script src="./js/header.js"></script>
   <script src="./js/monuments.js"></script>
   <script src="./js/video.js"></script>
-  <script src="./js/header.js"></script>
 </body>
 
 </html>

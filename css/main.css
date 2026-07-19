@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 20px;
+  padding: 15px 20px;
   background-color: #252525;
   /* border-bottom: 1px solid gray; */
   /* background: #00d2fc;
@@ -94,7 +94,7 @@
   height: 100dvh;
   z-index: 99999;
   box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.2);
-  display: none;
+  transform: translateX(100%);
 }
 
 .aside .close {
@@ -115,8 +115,8 @@
 }
 
 .aside .menu .link {
-  font-size: 20px;
-  padding: 15px 20px;
+  font-size: 15px;
+  padding: 12px 20px;
   transition: 0s;
 }
 
@@ -290,7 +290,7 @@
 
 .breadcrumb-content h1 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
   /* font-family: "Marcellus", serif; */
 }
@@ -306,7 +306,7 @@
 
   .breadcrumb-content h1 {
     font-size: 28px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
 }
@@ -314,7 +314,7 @@
 /************************** explore area  */
 
 .explore-area {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 60px 20px;
 }
 
 .explore-area>h2 {
@@ -537,7 +537,7 @@
 }
 @media screen and (max-width:576px) {
   .request {
-    padding: 60px 20px 30px;
+    padding: 60px 20px 60px;
   }
 
   .request h2 {
